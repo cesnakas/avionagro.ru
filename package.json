@@ -1,0 +1,25 @@
+{
+  "name": "avion_front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Sergey_djey@bitbucket.org/c_k_rim/avion_front.git"
+  },
+  "postinstall": {
+    "swiper/swiper-bundle.min.css": "copy css/swiper-bundle.min.css",
+    "swiper/swiper-bundle.min.js": "copy js/swiper-bundle.min.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/c_k_rim/avion_front#readme",
+  "dependencies": {
+    "postinstall": "^0.7.0",
+    "swiper": "^6.3.5"
+  }
+}

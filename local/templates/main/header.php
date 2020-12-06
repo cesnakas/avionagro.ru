@@ -24,3 +24,4 @@
 </head>
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 <body>
+

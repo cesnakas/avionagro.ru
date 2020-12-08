@@ -27,10 +27,10 @@
                                 <a href="<?=SITE_DIR;?>delivery/">» Доставка</a>
                             </li>
                             <li>
-                                <a href="#">» Новинки</a>
+                                <a href="<?=SITE_DIR;?>novelty/">» Новинки</a>
                             </li>
                             <li>
-                                <a href="#">» Контакты</a>
+                                <a href="<?=SITE_DIR;?>contact/">» Контакты</a>
                             </li>
                         </ul>
                     </div>

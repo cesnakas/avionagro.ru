@@ -2,194 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.access.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delivery/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delivery/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/compare.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/element.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/en/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/en/element.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/en/section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/en/section_horizontal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/en/section_vertical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/ru/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/ru/element.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/ru/section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/ru/section_horizontal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/lang/ru/section_vertical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_horizontal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_vertical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/sections.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/images/sec-unlocked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/images/sec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/bitrix/main.profile/.default/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/images/wt_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/images/wt_blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/images/wt_green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/images/wt_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/images/wt_yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/order_cancel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/order_detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/order_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/orders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/private.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/profile_detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/profile_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/subscribe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/order_cancel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/order_detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/order_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/orders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/private.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/profile_detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/profile_list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/subscribe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/order_cancel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/order_detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/orders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/private.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/profile_detail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/subscribe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.personal.section/bootstrap_v4/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/swiper-bundle.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/fonts/NunitoSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/Bucket_Plus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/File.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/Folder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/about-arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/local.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/page.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/phone.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/serche.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/squares.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/vk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/banner/banner-sell.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/banner/banner-sell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/banner/banner1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/banner/promotion1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/banner/promotion2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/brand/husqvarna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/brand/karcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/brand/stihl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/news/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/js/swiper-bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/personal/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/.section.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/urlrewrite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/nullStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/nullStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/nullStyle.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/nullStyle.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/nullStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/nullStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/swiper-bundle.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/swiper-bundle.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/textStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/textStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/textStyle.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/textStyle.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/textStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs/css/textStyle.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Bold.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Bold.otf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Bold.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Bold.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Regular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Regular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/NunitoSans-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/docs/fonts/NunitoSans-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/Bucket_Plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/Bucket_Plus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/File.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/File.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/Folder.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/Folder.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/about-arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/about-arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/arrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/instagram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/local.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/local.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/mail.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/page.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/page.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/phone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/serche.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/serche.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/squares.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/squares.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/twitter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/user.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Icons/vk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/Icons/vk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/banner-sell.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/banner/banner-sell.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/banner-sell.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/banner/banner-sell.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/banner1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/banner/banner1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/promotion1.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/banner/promotion1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner/promotion2.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/banner/promotion2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/brand/husqvarna.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/brand/husqvarna.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/brand/karcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/brand/karcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/brand/stihl.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/brand/stihl.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/news/banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/docs/img/news/banner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/swiper-bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/js/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/.section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basket/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact/.section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/novelty/.section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/novelty/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/icons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal/.section.php" beforeDir="false" afterPath="$PROJECT_DIR$/personal/.section.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,17 +40,17 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/delivery" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/basket" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SC\Documents\GitHub\avion\basket" />
+      <recent name="C:\Users\SC\Documents\GitHub\avion\contact" />
+      <recent name="C:\Users\SC\Documents\GitHub\avion\novelty" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\delivery" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\payment" />
-      <recent name="C:\Users\SC\Documents\GitHub\avion\news" />
-      <recent name="C:\Users\SC\Documents\GitHub\avion\service" />
-      <recent name="C:\Users\SC\Documents\GitHub\avion\about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SC\Documents\GitHub\avion" />
@@ -244,7 +65,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607333328353</updated>
-      <workItem from="1607333331276" duration="4809000" />
+      <workItem from="1607333331276" duration="4909000" />
+      <workItem from="1607412253454" duration="1558000" />
     </task>
     <servers />
   </component>
@@ -261,5 +83,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

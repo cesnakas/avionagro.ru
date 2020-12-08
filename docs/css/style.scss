@@ -482,8 +482,8 @@ body {
 			&::before {
 				content: '';
 				position: absolute;
-				top: 50%;
-				left: 47%;
+				top: 45%;
+				left: 46%;
 				width: 16px;
 				height: 1px;
 				background-color: $white;
@@ -492,8 +492,8 @@ body {
 			&::after {
 				content: '';
 				position: absolute;
-				top: 50%;
-				left: 25%;
+				top: 45%;
+				left: 23%;
 				width: 16px;
 				height: 1px;
 				background-color: $white;
@@ -1183,7 +1183,7 @@ body {
 				@extend %t1216und;
 			}
 			&__content {
-				min-height: 324px;
+				min-height: 225px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
@@ -1210,6 +1210,7 @@ body {
 				border-radius: 27px;
 				align-items: center;
 				justify-content: center;
+				text-decoration: none;
 				span {
 					color: $white;
 					@extend %t1420bold;
@@ -1536,16 +1537,7 @@ body {
 								font-size: 20px;
 								border-radius: 50%;
 								background-color: #cccdcd;
-								background-position: center;
-								transition: background 0.8s;
-								&:hover {
-									background-color: #b3b3b3 radial-gradient(circle, transparent 1%, #b3b3b3 1%) center/15000%;
-								}
-								&:active {
-									background-color: rgba(0, 0, 0, 0.5);
-									background-size: 100%;
-									transition: background 0s;
-								}
+								@extend %gray;
 							}
 							.number {
 								margin: 0 15px;
@@ -1669,7 +1661,57 @@ body {
 				}
 			}
 		}
-		
+		.cat-404 {
+			&__words {
+				position: absolute;
+				top: 70px;
+				left: 80px;
+				z-index: 6;
+				text-align: left;
+				p {
+					margin: 0;
+				}
+			}
+			&__curvedline {
+				margin: 15px 0 0 70px;
+				height: 50px;
+				width: 35px;
+			}
+			&__imags {
+				position: relative;
+				z-index: 5;
+				width: fit-content;
+				margin: 0 auto;
+				text-align: center;
+				img {
+					position: relative;
+					z-index: 10;
+				}
+			}
+			&__img-404 {
+				position: absolute;
+				width: 100%;
+				top: calc(50% - 90px);
+				left: 0;
+				z-index: 5;
+			}
+			&__title {
+				color: $blue;
+				@extend %t3238bold;
+				text-align: center;
+			}
+			&__subtitle {
+				color: $black87;
+				@extend %t1420;
+				text-align: center;
+			}
+			&__btn {
+				margin: 30px auto;
+				width: 195px;
+				@extend %green;
+				text-decoration: none;
+			}
+		}
 		
 		footer {
 			position: relative;
@@ -2050,7 +2092,7 @@ body {
 						background-position: center;
 						transition: background 0.8s;
 						&:hover {
-							background-color: $blue radial-gradient(circle, transparent 1px, $blue 1%) center/15000%;
+							background: $blue radial-gradient(circle, transparent 1px, $blue 1%) center/15000%;
 						}
 						&:active {
 							background-color: #e0ecf571;
@@ -2144,7 +2186,7 @@ body {
 							background-position: center;
 							transition: background 0.8s;
 							&:hover {
-								background-color: #fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
+								background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
 							}
 							&:active {
 								background-color: #E0ECF5;
@@ -2201,7 +2243,7 @@ body {
 							background-position: center;
 							transition: background 0.8s;
 							&:hover {
-								background-color: #fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
+								background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
 							}
 							&:active {
 								background-color: #E0ECF5;
@@ -2246,7 +2288,7 @@ body {
 						background-position: center;
 						transition: background 0.8s;
 						&:hover {
-							background-color: $white radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
+							background: $white radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
 						}
 						&:active {
 							background-color: $lightBlu;
@@ -2652,7 +2694,47 @@ body {
 			.main-text {
 				display: none;
 			}
-
+			.cat-404 {
+				margin: 50px auto;
+				&__words {
+					top: 30px;
+					left: 25px;
+					font-size: 12px;
+					line-height: 16px;
+					letter-spacing: 0.25px;
+				}
+				&__curvedline {
+					width: 20px;
+					margin: 0 0 0 70px;
+				}
+				&__imags {
+					width: 275px;
+					img {
+						width: 100%;
+					}
+				}
+				&__img-404 {
+					top: calc(50% - 50px);
+				}
+				&__title {
+					position: relative;
+					z-index: 6;
+					top: -50px;
+					font-weight: bold;
+					font-size: 16px;
+					line-height: 20px;
+					letter-spacing: 0.25px;
+				}
+				&__subtitle {
+					margin-top: 10px;
+					position: relative;
+					z-index: 6;
+					top: -50px;
+				}
+				&__btn {
+					display: none;
+				}
+			}
 			footer {
 				padding: 0 15px;
 				&::after {

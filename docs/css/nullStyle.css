@@ -1,18 +1,20 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   src: url("../fonts/NunitoSans-Regular.eot");
   src: local("☺"), url("../fonts/NunitoSans-Regular.woff") format("woff"), url("../fonts/NunitoSans-Regular.ttf") format("truetype"), url("../fonts/NunitoSans-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   src: url("../fonts/");
   src: local("☺"), url("../fonts/NunitoSans-Bold.woff") format("woff"), url("../fonts/NunitoSans-Bold.ttf") format("truetype"), url("../fonts/NunitoSans-Bold.svg") format("svg");
   font-weight: bold;
   font-style: normal;
 }
+
 /*Обнуление*/
 * {
   padding: 0;
@@ -20,7 +22,6 @@
 }
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -132,24 +133,31 @@ a {
 ol, ul {
   margin-bottom: 30px;
 }
+
 ol li, ul li {
   margin: 2.5px 0 2.5px 30px;
 }
+
 ol li::marker, ul li::marker {
   color: #00AEEF;
 }
+
 ol li ol, ol li ul, ul li ol, ul li ul {
   margin-bottom: 5px;
 }
+
 ol li ol li, ol li ul li, ul li ol li, ul li ul li {
   margin: 5px 0 2.5px 30px;
 }
+
 ol li ol li::marker, ol li ul li::marker, ul li ol li::marker, ul li ul li::marker {
   color: rgba(0, 0, 0, 0.38);
 }
+
 ol li ol li:last-child, ol li ul li:last-child, ul li ol li:last-child, ul li ul li:last-child {
   margin-bottom: 7.5px;
 }
+
 ol li ul li, ul li ul li {
   list-style: disc;
 }
@@ -169,9 +177,11 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+
 table thead {
   background-color: #0061AF;
 }
+
 table thead td {
   padding: 9px 25px 9px 10px;
   font-family: Nunito, sans-serif;
@@ -182,6 +192,7 @@ table thead td {
   letter-spacing: 0.5px;
   color: #fff;
 }
+
 table tbody td {
   padding: 9px 25px 9px 10px;
   color: #0061AF;
@@ -192,6 +203,7 @@ table tbody td {
   line-height: 16px;
   letter-spacing: 0.25px;
 }
+
 table tbody td:first-child {
   font-family: Nunito, sans-serif;
   font-style: normal;
@@ -211,7 +223,6 @@ table tbody td:first-child {
     line-height: 24px;
     letter-spacing: 0.25px;
   }
-
   h2 {
     font-family: Nunito, sans-serif;
     font-style: normal;
@@ -220,7 +231,6 @@ table tbody td:first-child {
     line-height: 20px;
     letter-spacing: 0.25px;
   }
-
   h3 {
     font-family: Nunito, sans-serif;
     font-style: normal;
@@ -230,7 +240,6 @@ table tbody td:first-child {
     letter-spacing: 0.5px;
     text-transform: uppercase;
   }
-
   h4 {
     font-family: Nunito, sans-serif;
     font-style: normal;
@@ -239,7 +248,6 @@ table tbody td:first-child {
     line-height: 20px;
     letter-spacing: 0.25px;
   }
-
   h5 {
     font-family: Nunito, sans-serif;
     font-style: normal;
@@ -247,7 +255,6 @@ table tbody td:first-child {
     font-size: 12px;
     line-height: 16px;
   }
-
   h6 {
     color: rgba(0, 0, 0, 0.87);
     font-family: Nunito, sans-serif;
@@ -257,20 +264,17 @@ table tbody td:first-child {
     line-height: 16px;
     letter-spacing: 0.25px;
   }
-
   h2, h3, h4, h5, h6 {
     margin: 30px 0 10px 0;
   }
-
   p {
     margin-bottom: 10px;
   }
-
   ol, ul {
     margin-bottom: 10px;
   }
 }
+
 /*--------------------*/
 /*button effekt*/
-
 /*# sourceMappingURL=nullStyle.css.map */

@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
 	document.querySelector('.header-mobile__burger').addEventListener('click', () => {
 		document.querySelectorAll('.header-mobile__nav, .header-mobile__burger')
 			.forEach(elem => elem.classList.toggle('active'));
@@ -18,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 
-
 	document.querySelectorAll('.button-callback').forEach((elem) => {
 		elem.addEventListener('click', () => {
 			const feedBack = document.querySelector('.callback-form');
@@ -37,6 +37,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		elem.addEventListener('click', (event) => {
 			const currentElem = event.currentTarget;
 			currentElem.classList.toggle('active')
+		})
+	})
+
+	document.querySelectorAll('.header-bot__search_input').forEach(el => {
+		el.addEventListener('focus', (event) => {
+			const curentElem = event.currentTarget;
+			curentElem.parentElement.classList.add('active');
+		})
+		el.addEventListener('blur', (event) => {
+			const curentElem = event.currentTarget;
+			if(!curentElem.value) {
+				curentElem.parentElement.classList.remove('active');
+			}
 		})
 	})
 })

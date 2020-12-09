@@ -7,17 +7,28 @@
  */
 $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STUB'] == 'Y');
 ?>
-<div class="basket-line">
+
 <?if (!$compositeStub && $arParams['SHOW_AUTHOR'] == 'Y'):?>
-	<div class="mb-1 basket-line-block">
-		<?if ($USER->IsAuthorized()):
+
+		<?
+        if ($USER->IsAuthorized()):
 			$name = trim($USER->GetFullName());
 			if (! $name)
 				$name = trim($USER->GetLogin());
-			?>
-			<a class="basket-line-block-icon-profile" href="<?=$arParams['PATH_TO_PROFILE']?>"><?=htmlspecialcharsbx($name)?></a>
-			<a style='margin-right: 0;' href="?logout=yes&<?=bitrix_sessid_get()?>"><?=GetMessage('TSB1_LOGOUT')?></a>
-		<?else:
+        ?>
+        <a class="" href="<?=$arParams['PATH_TO_PROFILE']?>">
+            <div class="header-bot__user_icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.375 23.25C21.375 23.25 23.25 23.25 23.25 21.375C23.25 19.5 21.375 13.875 12 13.875C2.625 13.875 0.75 19.5 0.75 21.375C0.75 23.25 2.625 23.25 2.625 23.25H21.375ZM2.63438 21.48V21.4762V21.48ZM2.66625 21.375H21.3337C21.3425 21.374 21.3513 21.3727 21.36 21.3713L21.375 21.3675C21.3731 20.9062 21.0863 19.5187 19.815 18.2475C18.5925 17.025 16.2919 15.75 12 15.75C7.70625 15.75 5.4075 17.025 4.185 18.2475C2.91375 19.5187 2.62875 20.9062 2.625 21.3675C2.63872 21.3701 2.65247 21.3726 2.66625 21.375ZM21.3675 21.48V21.4762V21.48ZM12 10.125C12.9946 10.125 13.9484 9.72991 14.6516 9.02665C15.3549 8.32339 15.75 7.36956 15.75 6.375C15.75 5.38044 15.3549 4.42661 14.6516 3.72335C13.9484 3.02009 12.9946 2.625 12 2.625C11.0054 2.625 10.0516 3.02009 9.34835 3.72335C8.64509 4.42661 8.25 5.38044 8.25 6.375C8.25 7.36956 8.64509 8.32339 9.34835 9.02665C10.0516 9.72991 11.0054 10.125 12 10.125ZM17.625 6.375C17.625 7.86684 17.0324 9.29758 15.9775 10.3525C14.9226 11.4074 13.4918 12 12 12C10.5082 12 9.07742 11.4074 8.02252 10.3525C6.96763 9.29758 6.375 7.86684 6.375 6.375C6.375 4.88316 6.96763 3.45242 8.02252 2.39752C9.07742 1.34263 10.5082 0.75 12 0.75C13.4918 0.75 14.9226 1.34263 15.9775 2.39752C17.0324 3.45242 17.625 4.88316 17.625 6.375Z" fill="currentColor"/>
+                </svg>
+            </div>
+            <span hidden><?=htmlspecialcharsbx($name)?></span>
+        </a>
+        <a hidden href="?logout=yes&<?=bitrix_sessid_get()?>">
+            <?=GetMessage('TSB1_LOGOUT')?>
+        </a>
+		<?
+        else:
 			$arParamsToDelete = array(
 				"login",
 				"login_form",
@@ -48,53 +59,64 @@ $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STU
 			$pathToAuthorize .= (mb_stripos($pathToAuthorize, '?') === false ? '?' : '&');
 			$pathToAuthorize .= 'login=yes&backurl='.$currentUrl;
 			?>
-			<a class="basket-line-block-icon-profile" href="<?=$pathToAuthorize?>"><?=GetMessage('TSB1_LOGIN')?></a>
+			<a href="<?=$pathToAuthorize?>">
+                <div class="header-bot__user_icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.375 23.25C21.375 23.25 23.25 23.25 23.25 21.375C23.25 19.5 21.375 13.875 12 13.875C2.625 13.875 0.75 19.5 0.75 21.375C0.75 23.25 2.625 23.25 2.625 23.25H21.375ZM2.63438 21.48V21.4762V21.48ZM2.66625 21.375H21.3337C21.3425 21.374 21.3513 21.3727 21.36 21.3713L21.375 21.3675C21.3731 20.9062 21.0863 19.5187 19.815 18.2475C18.5925 17.025 16.2919 15.75 12 15.75C7.70625 15.75 5.4075 17.025 4.185 18.2475C2.91375 19.5187 2.62875 20.9062 2.625 21.3675C2.63872 21.3701 2.65247 21.3726 2.66625 21.375ZM21.3675 21.48V21.4762V21.48ZM12 10.125C12.9946 10.125 13.9484 9.72991 14.6516 9.02665C15.3549 8.32339 15.75 7.36956 15.75 6.375C15.75 5.38044 15.3549 4.42661 14.6516 3.72335C13.9484 3.02009 12.9946 2.625 12 2.625C11.0054 2.625 10.0516 3.02009 9.34835 3.72335C8.64509 4.42661 8.25 5.38044 8.25 6.375C8.25 7.36956 8.64509 8.32339 9.34835 9.02665C10.0516 9.72991 11.0054 10.125 12 10.125ZM17.625 6.375C17.625 7.86684 17.0324 9.29758 15.9775 10.3525C14.9226 11.4074 13.4918 12 12 12C10.5082 12 9.07742 11.4074 8.02252 10.3525C6.96763 9.29758 6.375 7.86684 6.375 6.375C6.375 4.88316 6.96763 3.45242 8.02252 2.39752C9.07742 1.34263 10.5082 0.75 12 0.75C13.4918 0.75 14.9226 1.34263 15.9775 2.39752C17.0324 3.45242 17.625 4.88316 17.625 6.375Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span hidden><?=GetMessage('TSB1_LOGIN')?></span>
+            </a>
 			<?
 			if ($arParams['SHOW_REGISTRATION'] === 'Y')
 			{
 				$pathToRegister = $arParams['PATH_TO_REGISTER'];
 				$pathToRegister .= (mb_stripos($pathToRegister, '?') === false ? '?' : '&');
 				$pathToRegister .= 'register=yes&backurl='.$currentUrl;
-				?>
-				<a style="margin-right: 0;" href="<?=$pathToRegister?>"><?=GetMessage('TSB1_REGISTER')?></a>
-				<?
-			}
-			?>
+            ?>
+            <a href="<?=$pathToRegister?>">
+                <?=GetMessage('TSB1_REGISTER')?>
+            </a>
+            <? } ?>
 		<?endif?>
-	</div>
-<?endif?>
 
-	<div class="basket-line-block">
-		<?
-		if (!$arResult["DISABLE_USE_BASKET"])
-		{
-			?>
-			<a class="basket-line-block-icon-cart" href="<?=$arParams['PATH_TO_BASKET']?>"><?=GetMessage('TSB1_CART')?></a>
-			<?
-		}
+<? endif; ?>
 
-		if (!$compositeStub)
-		{
-			if ($arParams['SHOW_NUM_PRODUCTS'] == 'Y' && ($arResult['NUM_PRODUCTS'] > 0 || $arParams['SHOW_EMPTY_VALUES'] == 'Y'))
-			{
-				echo $arResult['BASKET_COUNT_DESCRIPTION'];
 
-				if ($arParams['SHOW_TOTAL_PRICE'] == 'Y')
-				{
-					?>
-					<br <? if ($arParams['POSITION_FIXED'] == 'Y'): ?>class="d-none d-block-sm"<? endif; ?>/>
-					<span>
-						<?=GetMessage('TSB1_TOTAL_PRICE')?> <strong><?=$arResult['TOTAL_PRICE']?></strong>
-					</span>
-					<?
-				}
-			}
-		}
+<? if (!$arResult["DISABLE_USE_BASKET"]) { ?>
+    <a href="<?=$arParams['PATH_TO_BASKET']?>">
 
-		if ($arParams['SHOW_PERSONAL_LINK'] == 'Y'):?>
-			<div class="mt-1 basket-line-block">
-				<a href="<?=$arParams['PATH_TO_PERSONAL']?>"><?=GetMessage('TSB1_PERSONAL')?></a>
-			</div>
-		<? endif ?>
-	</div>
-</div>
+        <div class="header-bot__user_icon">
+            <svg width="25" height="25" viewBox="0 0 26 26" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.25 1.33333C0.25 1.11232 0.3378 0.900358 0.494085 0.744078C0.65037 0.587797 0.862338 0.5 1.08336 0.5H3.58344C3.76933 0.500051 3.94986 0.562251 4.09634 0.676708C4.24281 0.791165 4.34681 0.951306 4.39179 1.13167L5.06682 3.83333H24.4174C24.5398 3.83345 24.6606 3.8605 24.7713 3.91258C24.8821 3.96467 24.98 4.04049 25.0581 4.13467C25.1362 4.22886 25.1926 4.33908 25.2233 4.45753C25.254 4.57597 25.2583 4.69973 25.2358 4.82L22.7357 18.1533C22.6999 18.3443 22.5986 18.5168 22.4492 18.6409C22.2997 18.7651 22.1116 18.8332 21.9173 18.8333H6.91687C6.72259 18.8332 6.53447 18.7651 6.38504 18.6409C6.23561 18.5168 6.13426 18.3443 6.09851 18.1533L3.6001 4.845L2.93342 2.16667H1.08336C0.862338 2.16667 0.65037 2.07887 0.494085 1.92259C0.3378 1.76631 0.25 1.55435 0.25 1.33333ZM5.42016 5.5L7.60856 17.1667H21.2256L23.414 5.5H5.42016ZM8.58359 18.8333C7.69951 18.8333 6.85164 19.1845 6.2265 19.8096C5.60135 20.4348 5.25015 21.2826 5.25015 22.1667C5.25015 23.0507 5.60135 23.8986 6.2265 24.5237C6.85164 25.1488 7.69951 25.5 8.58359 25.5C9.46767 25.5 10.3155 25.1488 10.9407 24.5237C11.5658 23.8986 11.917 23.0507 11.917 22.1667C11.917 21.2826 11.5658 20.4348 10.9407 19.8096C10.3155 19.1845 9.46767 18.8333 8.58359 18.8333ZM20.2506 18.8333C19.3665 18.8333 18.5187 19.1845 17.8935 19.8096C17.2684 20.4348 16.9172 21.2826 16.9172 22.1667C16.9172 23.0507 17.2684 23.8986 17.8935 24.5237C18.5187 25.1488 19.3665 25.5 20.2506 25.5C21.1347 25.5 21.9826 25.1488 22.6077 24.5237C23.2329 23.8986 23.5841 23.0507 23.5841 22.1667C23.5841 21.2826 23.2329 20.4348 22.6077 19.8096C21.9826 19.1845 21.1347 18.8333 20.2506 18.8333ZM8.58359 20.5C8.14155 20.5 7.71761 20.6756 7.40504 20.9882C7.09247 21.3007 6.91687 21.7246 6.91687 22.1667C6.91687 22.6087 7.09247 23.0326 7.40504 23.3452C7.71761 23.6577 8.14155 23.8333 8.58359 23.8333C9.02563 23.8333 9.44957 23.6577 9.76214 23.3452C10.0747 23.0326 10.2503 22.6087 10.2503 22.1667C10.2503 21.7246 10.0747 21.3007 9.76214 20.9882C9.44957 20.6756 9.02563 20.5 8.58359 20.5ZM20.2506 20.5C19.8086 20.5 19.3846 20.6756 19.0721 20.9882C18.7595 21.3007 18.5839 21.7246 18.5839 22.1667C18.5839 22.6087 18.7595 23.0326 19.0721 23.3452C19.3846 23.6577 19.8086 23.8333 20.2506 23.8333C20.6927 23.8333 21.1166 23.6577 21.4292 23.3452C21.7417 23.0326 21.9173 22.6087 21.9173 22.1667C21.9173 21.7246 21.7417 21.3007 21.4292 20.9882C21.1166 20.6756 20.6927 20.5 20.2506 20.5Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <span hidden><?=GetMessage('TSB1_CART')?></span>
+<? } ?>
+
+<? if (!$compositeStub): ?>
+
+    <? if ($arParams['SHOW_NUM_PRODUCTS'] == 'Y' && ($arResult['NUM_PRODUCTS'] > 0 || $arParams['SHOW_EMPTY_VALUES'] == 'Y')): ?>
+
+        <?/*=$arResult['BASKET_COUNT_DESCRIPTION'];*/?>
+
+        <? if ($arParams['SHOW_TOTAL_PRICE'] == 'Y'): ?>
+
+        <span class="header-bot__user_num">
+            <?=$arResult['NUM_PRODUCTS'];?>
+        </span>
+
+            <?/*=GetMessage('TSB1_TOTAL_PRICE')*/?> <?/*=$arResult['TOTAL_PRICE']*/?>
+
+        <? endif; ?>
+
+    <? endif; ?>
+
+<? endif; ?>
+    </a>
+
+<?if ($arParams['SHOW_PERSONAL_LINK'] == 'Y'):?>
+<a href="<?=$arParams['PATH_TO_PERSONAL']?>">
+    <?=GetMessage('TSB1_PERSONAL')?>
+</a>
+<? endif ?>

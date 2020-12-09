@@ -13,11 +13,11 @@
 /** @var CBitrixComponent $component */
 
 $this->setFrameMode(true);
-
 ?>
-<div class="row">
-	<div class="col bx-<?=$arParams['TEMPLATE_THEME']?>">
-		<?
+
+<div class="catalog">
+
+<?
 $sectionListParams = array(
 	"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 	"IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -160,6 +160,5 @@ if ($arParams["SHOW_TOP_ELEMENTS"] !== "N")
 	unset($basketAction);
 }
 ?>
-		</div>
-	</div>
+</div>
 <?

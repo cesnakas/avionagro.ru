@@ -3,31 +3,91 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Каталог");
 ?>
 
+    <div class="header-breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <ul class="header-breadcrumb__list">
+                    <li class="header-breadcrumb__item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="header-breadcrumb__item">
+                        <p>Запчасти и детали</p>
+                    </li>
+                </ul>
+                <div class="header-breadcrumb__title">Запчасти и детали для сельскохозяйственной техники</div>
+                <p class="header-breadcrumb__about">
+                    Текст для SEO. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-banner">
+        <div class="banner-ad">
+            <div class="swiper-container slider-banner-ad">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/banner1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/banner1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/banner1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/banner1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/banner1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination banner-pagination"></div>
+                <div class="swiper-button-prev banner-button-prev"></div>
+                <div class="swiper-button-next banner-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
 <?$APPLICATION->IncludeComponent(
     "bitrix:catalog",
     "bootstrap_v4",
     Array(
         "ACTION_VARIABLE" => "action",
         "ADD_ELEMENT_CHAIN" => "N",
+        "ADD_PICT_PROP" => "-",
         "ADD_PROPERTIES_TO_BASKET" => "Y",
         "ADD_SECTIONS_CHAIN" => "Y",
-        "AJAX_MODE" => "N",
+        "AJAX_MODE" => "Y",
         "AJAX_OPTION_ADDITIONAL" => "",
-        "AJAX_OPTION_HISTORY" => "N",
-        "AJAX_OPTION_JUMP" => "N",
+        "AJAX_OPTION_HISTORY" => "Y",
+        "AJAX_OPTION_JUMP" => "Y",
         "AJAX_OPTION_STYLE" => "Y",
-        "BASKET_URL" => "/personal/basket.php",
+        "BASKET_URL" => "/basket/",
         "BIG_DATA_RCM_TYPE" => "personal",
         "CACHE_FILTER" => "N",
         "CACHE_GROUPS" => "Y",
         "CACHE_TIME" => "36000000",
         "CACHE_TYPE" => "A",
         "COMMON_ADD_TO_BASKET_ACTION" => "ADD",
-        "COMMON_SHOW_CLOSE_POPUP" => "N",
+        "COMMON_SHOW_CLOSE_POPUP" => "Y",
         "COMPATIBLE_MODE" => "Y",
         "CONVERT_CURRENCY" => "N",
         "DETAIL_ADD_DETAIL_TO_SLIDER" => "N",
         "DETAIL_ADD_TO_BASKET_ACTION" => array("BUY"),
+        "DETAIL_ADD_TO_BASKET_ACTION_PRIMARY" => array("BUY"),
         "DETAIL_BACKGROUND_IMAGE" => "-",
         "DETAIL_BRAND_USE" => "N",
         "DETAIL_BROWSER_TITLE" => "-",
@@ -36,6 +96,7 @@ $APPLICATION->SetTitle("Каталог");
         "DETAIL_DISPLAY_NAME" => "Y",
         "DETAIL_DISPLAY_PREVIEW_TEXT_MODE" => "E",
         "DETAIL_IMAGE_RESOLUTION" => "16by9",
+        "DETAIL_MAIN_BLOCK_PROPERTY_CODE" => array(),
         "DETAIL_META_DESCRIPTION" => "-",
         "DETAIL_META_KEYWORDS" => "-",
         "DETAIL_PRODUCT_INFO_BLOCK_ORDER" => "sku,props",
@@ -51,11 +112,15 @@ $APPLICATION->SetTitle("Каталог");
         "DISABLE_INIT_JS_IN_COMPONENT" => "N",
         "DISPLAY_BOTTOM_PAGER" => "Y",
         "DISPLAY_TOP_PAGER" => "N",
-        "ELEMENT_SORT_FIELD" => "sort",
-        "ELEMENT_SORT_FIELD2" => "id",
+        "ELEMENT_SORT_FIELD" => "name",
+        "ELEMENT_SORT_FIELD2" => "SCALED_PRICE_1",
         "ELEMENT_SORT_ORDER" => "asc",
-        "ELEMENT_SORT_ORDER2" => "desc",
+        "ELEMENT_SORT_ORDER2" => "asc",
+        "FILTER_FIELD_CODE" => array("",""),
         "FILTER_HIDE_ON_MOBILE" => "N",
+        "FILTER_NAME" => "",
+        "FILTER_PRICE_CODE" => array(),
+        "FILTER_PROPERTY_CODE" => array("",""),
         "FILTER_VIEW_MODE" => "VERTICAL",
         "GIFTS_DETAIL_BLOCK_TITLE" => "Выберите один из подарков",
         "GIFTS_DETAIL_HIDE_BLOCK_TITLE" => "N",
@@ -75,25 +140,34 @@ $APPLICATION->SetTitle("Каталог");
         "GIFTS_SHOW_OLD_PRICE" => "Y",
         "HIDE_NOT_AVAILABLE" => "N",
         "HIDE_NOT_AVAILABLE_OFFERS" => "N",
-        "IBLOCK_ID" => "",
-        "IBLOCK_TYPE" => "rest_entity",
+        "IBLOCK_ID" => "1, 2",
+        "IBLOCK_TYPE" => "catalog",
         "INCLUDE_SUBSECTIONS" => "Y",
-        "INSTANT_RELOAD" => "N",
-        "LAZY_LOAD" => "N",
+        "INSTANT_RELOAD" => "Y",
+        "LABEL_PROP" => array(),
+        "LAZY_LOAD" => "Y",
         "LINE_ELEMENT_COUNT" => "3",
         "LINK_ELEMENTS_URL" => "link.php?PARENT_ELEMENT_ID=#ELEMENT_ID#",
         "LINK_IBLOCK_ID" => "",
         "LINK_IBLOCK_TYPE" => "",
         "LINK_PROPERTY_SID" => "",
         "LIST_BROWSER_TITLE" => "-",
+        "LIST_ENLARGE_PRODUCT" => "STRICT",
         "LIST_META_DESCRIPTION" => "-",
         "LIST_META_KEYWORDS" => "-",
-        "LOAD_ON_SCROLL" => "N",
+        "LIST_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
+        "LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false}]",
+        "LIST_PROPERTY_CODE_MOBILE" => array(),
+        "LIST_SHOW_SLIDER" => "Y",
+        "LIST_SLIDER_INTERVAL" => "3000",
+        "LIST_SLIDER_PROGRESS" => "N",
+        "LOAD_ON_SCROLL" => "Y",
         "MESSAGE_404" => "",
         "MESS_BTN_ADD_TO_BASKET" => "В корзину",
         "MESS_BTN_BUY" => "Купить",
         "MESS_BTN_COMPARE" => "Сравнение",
         "MESS_BTN_DETAIL" => "Подробнее",
+        "MESS_BTN_LAZY_LOAD" => "Показать ещё",
         "MESS_BTN_SUBSCRIBE" => "Подписаться",
         "MESS_COMMENTS_TAB" => "Комментарии",
         "MESS_DESCRIPTION_TAB" => "Описание",
@@ -105,11 +179,11 @@ $APPLICATION->SetTitle("Каталог");
         "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
         "PAGER_SHOW_ALL" => "N",
         "PAGER_SHOW_ALWAYS" => "N",
-        "PAGER_TEMPLATE" => ".default",
+        "PAGER_TEMPLATE" => "bootstrap_v4",
         "PAGER_TITLE" => "Товары",
-        "PAGE_ELEMENT_COUNT" => "30",
+        "PAGE_ELEMENT_COUNT" => "20",
         "PARTIAL_PRODUCT_PROPERTIES" => "N",
-        "PRICE_CODE" => array(),
+        "PRICE_CODE" => array("BASE_TYPE_PRICE"),
         "PRICE_VAT_INCLUDE" => "Y",
         "PRICE_VAT_SHOW_VALUE" => "N",
         "PRODUCT_ID_VARIABLE" => "id",
@@ -128,7 +202,9 @@ $APPLICATION->SetTitle("Каталог");
         "SECTION_COUNT_ELEMENTS" => "Y",
         "SECTION_ID_VARIABLE" => "SECTION_ID",
         "SECTION_TOP_DEPTH" => "2",
-        "SEF_MODE" => "N",
+        "SEF_FOLDER" => "/catalog/",
+        "SEF_MODE" => "Y",
+        "SEF_URL_TEMPLATES" => Array("compare"=>"compare.php?action=#ACTION_CODE#","element"=>"#SECTION_CODE#/#ELEMENT_CODE#/","section"=>"#SECTION_CODE#/","sections"=>"","smart_filter"=>"#SECTION_CODE#/filter/#SMART_FILTER_PATH#/apply/"),
         "SET_LAST_MODIFIED" => "N",
         "SET_STATUS_404" => "N",
         "SET_TITLE" => "Y",
@@ -139,17 +215,26 @@ $APPLICATION->SetTitle("Каталог");
         "SHOW_OLD_PRICE" => "N",
         "SHOW_PRICE_COUNT" => "1",
         "SHOW_TOP_ELEMENTS" => "Y",
+        "SIDEBAR_DETAIL_POSITION" => "right",
         "SIDEBAR_DETAIL_SHOW" => "N",
         "SIDEBAR_PATH" => "",
+        "SIDEBAR_SECTION_POSITION" => "right",
         "SIDEBAR_SECTION_SHOW" => "Y",
-        "TEMPLATE_THEME" => "blue",
+        "TEMPLATE_THEME" => "",
         "TOP_ADD_TO_BASKET_ACTION" => "ADD",
-        "TOP_ELEMENT_COUNT" => "9",
+        "TOP_ELEMENT_COUNT" => "12",
         "TOP_ELEMENT_SORT_FIELD" => "sort",
         "TOP_ELEMENT_SORT_FIELD2" => "id",
         "TOP_ELEMENT_SORT_ORDER" => "asc",
         "TOP_ELEMENT_SORT_ORDER2" => "desc",
+        "TOP_ENLARGE_PRODUCT" => "STRICT",
         "TOP_LINE_ELEMENT_COUNT" => "3",
+        "TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
+        "TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false}]",
+        "TOP_SHOW_SLIDER" => "Y",
+        "TOP_SLIDER_INTERVAL" => "3000",
+        "TOP_SLIDER_PROGRESS" => "N",
+        "TOP_VIEW_MODE" => "SECTION",
         "USER_CONSENT" => "N",
         "USER_CONSENT_ID" => "0",
         "USER_CONSENT_IS_CHECKED" => "Y",
@@ -159,19 +244,20 @@ $APPLICATION->SetTitle("Каталог");
         "USE_COMPARE" => "N",
         "USE_ELEMENT_COUNTER" => "Y",
         "USE_ENHANCED_ECOMMERCE" => "N",
-        "USE_FILTER" => "N",
+        "USE_FILTER" => "Y",
         "USE_GIFTS_DETAIL" => "Y",
         "USE_GIFTS_MAIN_PR_SECTION_LIST" => "Y",
         "USE_GIFTS_SECTION" => "Y",
-        "USE_MAIN_ELEMENT_SECTION" => "N",
+        "USE_MAIN_ELEMENT_SECTION" => "Y",
         "USE_PRICE_COUNT" => "N",
         "USE_PRODUCT_QUANTITY" => "N",
         "USE_REVIEW" => "N",
         "USE_SALE_BESTSELLERS" => "Y",
-        "USE_STORE" => "N",
-        "VARIABLE_ALIASES" => Array("ELEMENT_ID"=>"ELEMENT_ID","SECTION_ID"=>"SECTION_ID")
+        "USE_STORE" => "N"
     )
 );?>
+
+    </div>
 
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");

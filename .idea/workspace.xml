@@ -2,45 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/empty.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/images/empty_cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/images/loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/images/no_photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js-templates/basket-item.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js-templates/basket-total.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/action-pool.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/action-pool.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/action-pool.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/component.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/component.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/filter.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/filter.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/mustache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/mustache.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/js/mustache.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/lang/en/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/lang/en/mutator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/lang/ru/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/lang/ru/mutator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/mutator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/themes/blue/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/themes/green/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/themes/red/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/themes/vendor/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket/bootstrap_v4/themes/yellow/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/politika-konfidencialnosti.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/basket/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/top_template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/top_template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/sections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/news/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +63,7 @@
       <updated>1607333328353</updated>
       <workItem from="1607333331276" duration="4909000" />
       <workItem from="1607412253454" duration="8248000" />
-      <workItem from="1607501001925" duration="6347000" />
+      <workItem from="1607501001925" duration="10781000" />
     </task>
     <servers />
   </component>

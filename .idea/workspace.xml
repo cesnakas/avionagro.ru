@@ -2,51 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/ajax_template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/images/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/images/delete_item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/images/info.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/images/profile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.basket.basket.line/bootstrap_v4/top_template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/nullStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/nullStyle.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/nullStyle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/textStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/textStyle.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/css/textStyle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/404.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/curvedline.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/img/gif/cat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/.default/images/left_menu_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/mobile/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/mobile/images/left_menu_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/mobile/lang/en/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/mobile/lang/ru/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/mobile/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/mobile/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/img/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/includes/.section.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/includes/inc_copyright.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/includes/inc_phone.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/Bucket_Plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/Bucket_Plus.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/File.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/File.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/Folder.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/Folder.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/arrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/instagram.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/local.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/local.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/mail.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/page.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/page.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/phone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/serche.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/serche.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/squares.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/squares.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/twitter.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/user.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/img/Icons/vk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/img/Icons/vk.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/search/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,17 +45,17 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/local/templates/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/local/templates/main/components/bitrix/menu" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SC\Documents\GitHub\avion\local\templates\main\components\bitrix\menu" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\local\templates\main" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\search" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\basket" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\contact" />
-      <recent name="C:\Users\SC\Documents\GitHub\avion\novelty" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SC\Documents\GitHub\avion" />
@@ -103,6 +72,7 @@
       <updated>1607333328353</updated>
       <workItem from="1607333331276" duration="4909000" />
       <workItem from="1607412253454" duration="8248000" />
+      <workItem from="1607501001925" duration="1820000" />
     </task>
     <servers />
   </component>

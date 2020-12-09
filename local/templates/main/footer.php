@@ -107,7 +107,19 @@
                     </div>
                 </div>
                 <div class="footer-bot">
-                    <p>© 2020-2020 ООО «Авион»</p>
+			<?$APPLICATION->IncludeComponent(
+			    "bitrix:main.include", 
+			    ".default", 
+			    array(
+				"AREA_FILE_SHOW" => "file",
+				"AREA_FILE_SUFFIX" => "inc",
+				"AREA_FILE_RECURSIVE" => "Y",
+				"EDIT_TEMPLATE" => "",
+				"COMPONENT_TEMPLATE" => ".default",
+				"PATH" => SITE_TEMPLATE_PATH."/includes/inc_copyright.php"
+			    ),
+			    false
+			);?>
                     <a href="#">Политика конфиденциальности</a>
                 </div>
             </div>

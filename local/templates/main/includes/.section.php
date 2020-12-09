@@ -1,0 +1,5 @@
+<?
+$sSectionName = "Включаемые области";
+$arDirProperties = [
+
+];

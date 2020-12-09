@@ -49,7 +49,19 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.37879 1.44026C3.3296 1.37698 3.26751 1.32489 3.19663 1.28745C3.12576 1.25001 3.04774 1.22808 2.96774 1.22312C2.88774 1.21815 2.8076 1.23026 2.73264 1.25865C2.65769 1.28704 2.58963 1.33105 2.53299 1.38776L1.67135 2.25024C1.26886 2.65356 1.12053 3.22438 1.29636 3.7252C2.02612 5.79814 3.21321 7.68019 4.76958 9.23174C6.32114 10.7881 8.20317 11.9752 10.2761 12.705C10.7769 12.8808 11.3477 12.7325 11.751 12.33L12.6127 11.4683C12.6694 11.4117 12.7134 11.3436 12.7418 11.2687C12.7702 11.1937 12.7823 11.1136 12.7773 11.0336C12.7723 10.9536 12.7504 10.8756 12.713 10.8047C12.6755 10.7338 12.6235 10.6717 12.5602 10.6225L10.6377 9.12757C10.5701 9.07514 10.4915 9.03874 10.4078 9.02113C10.324 9.00352 10.2374 9.00515 10.1544 9.02591L8.32947 9.48173C8.08588 9.54261 7.83067 9.53938 7.5887 9.47235C7.34672 9.40532 7.12623 9.27678 6.94868 9.09924L4.90208 7.05179C4.72439 6.87432 4.59569 6.65387 4.52852 6.41189C4.46134 6.16991 4.45798 5.91466 4.51876 5.67099L4.97541 3.84603C4.99617 3.76303 4.9978 3.6764 4.98019 3.59268C4.96258 3.50895 4.92618 3.43032 4.87375 3.36271L3.37879 1.44026ZM1.90384 0.759443C2.04966 0.613571 2.22485 0.500391 2.41777 0.427419C2.61069 0.354446 2.81693 0.323351 3.02279 0.336197C3.22865 0.349044 3.42942 0.405538 3.61177 0.50193C3.79412 0.598321 3.95388 0.732403 4.08044 0.895273L5.57539 2.81689C5.84955 3.16938 5.94621 3.62854 5.83788 4.06186L5.38206 5.88682C5.3585 5.98134 5.35977 6.08035 5.38576 6.17424C5.41175 6.26812 5.46157 6.35369 5.53039 6.42264L7.57783 8.47009C7.64686 8.53905 7.73257 8.58895 7.82661 8.61495C7.92066 8.64094 8.01983 8.64214 8.11448 8.61842L9.93859 8.1626C10.1524 8.10913 10.3756 8.10498 10.5913 8.15045C10.807 8.19593 11.0095 8.28984 11.1835 8.42509L13.1052 9.92005C13.796 10.4575 13.8593 11.4783 13.241 12.0958L12.3793 12.9575C11.7627 13.5741 10.8411 13.845 9.98192 13.5425C7.78298 12.7688 5.78645 11.5099 4.14044 9.85922C2.4899 8.21344 1.23103 6.21719 0.457218 4.01853C0.155561 3.16022 0.426386 2.23774 1.04303 1.62109L1.90467 0.759443H1.90384Z" fill="currentColor"/>
                                 </svg>
                             </div>
-                            <span>+7 (495) 000-00-00</span>
+                            <?$APPLICATION->IncludeComponent(
+	                            "bitrix:main.include",
+    	                        ".default", 
+                                array(
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "inc",
+                                    "AREA_FILE_RECURSIVE" => "Y",
+                                    "EDIT_TEMPLATE" => "",
+                                    "COMPONENT_TEMPLATE" => ".default",
+                                    "PATH" => SITE_TEMPLATE_PATH."/includes/inc_phone.php"
+                                ),
+                                false
+            	            );?>
                         </a>
 
                     </div>
@@ -141,7 +153,7 @@
                             <span></span>
                         </div>
                         <div class="header-mobile__content">
-                            <a class="header-mobile__logo" href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/img/logo.png" alt=""></a>
+                            <a class="header-mobile__logo" href="<?=SITE_DIR;?>"><img src="<?=SITE_TEMPLATE_PATH;?>/img/logo.png" alt=""></a>
                             <div class="header-mobile__menu">
                                 <a href="tel:+74950000000">
                                     <div class="header-mobile__menu_icon">
@@ -168,8 +180,11 @@
                             </div>
                         </div>
                         <nav class="header-mobile__nav">
+
                             <ul class="header-mobile__list">
+
                                 <li class="header-mobile__item">
+
                                     <button class="header-mobile__list_btnNav">
                                         <div class="header-mobile__list_btnIcon">
                                             <svg width="21" height="21" viewBox="0 0 22 22" fill="none">
@@ -179,6 +194,7 @@
                                         </div>
                                         <div class="header-mobile__list_arrow"></div>
                                     </button>
+
                                     <ul class="header-mobile__sublist">
                                         <li class="header-mobile__subitem">
                                             <div class="header-mobile__subitem_link">
@@ -233,23 +249,28 @@
                                             </div>
                                         </li>
                                     </ul>
+
                                 </li>
-                                <li class="header-mobile__item">
-                                    <a class="header-mobile__list_item" href="#"><span>О компании</span></a>
-                                </li>
-                                <li class="header-mobile__item">
-                                    <a class="header-mobile__list_item" href="#"><span>Сервис</span></a>
-                                </li>
-                                <li class="header-mobile__item">
-                                    <a class="header-mobile__list_item" href="#"><span>Новинки</span></a>
-                                </li>
-                                <li class="header-mobile__item">
-                                    <a class="header-mobile__list_item" href="#"><span>Новости</span></a>
-                                </li>
-                                <li class="header-mobile__item">
-                                    <a class="header-mobile__list_item" href="#"><span>Контакты</span></a>
-                                </li>
+
+                                <?$APPLICATION->IncludeComponent(
+                                    "bitrix:menu",
+                                    "mobile",
+                                    Array(
+                                        "ALLOW_MULTI_SELECT" => "N",
+                                        "CHILD_MENU_TYPE" => "top",
+                                        "DELAY" => "N",
+                                        "MAX_LEVEL" => "1",
+                                        "MENU_CACHE_GET_VARS" => array(""),
+                                        "MENU_CACHE_TIME" => "3600",
+                                        "MENU_CACHE_TYPE" => "A",
+                                        "MENU_CACHE_USE_GROUPS" => "Y",
+                                        "ROOT_MENU_TYPE" => "top",
+                                        "USE_EXT" => "N"
+                                    )
+                                );?>
+
                             </ul>
+
                             <button class="header-mobile__buttoncall">
                                 <div class="header-mobile__buttoncall_icon">
                                     <svg width="20" height="20" viewBox="0 0 14 14" fill="none">
@@ -289,7 +310,7 @@
                         </nav>
                     </div>
                     <div id="test" class="header-bot__search">
-                        <input type="text" id="search-text"/>
+                        <input type="text" id="search-text" class="header-bot__search_input"/>
                         <label for="search-text">Название или номер...</label>
                         <button class="header-bot__search_icon">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

@@ -33,7 +33,6 @@ $this->setFrameMode(true);
     <?else:?>
 
         <input type="text" id="search-text"/>
-
         <label for="search-text">Название или номер...</label>
 
     <?endif;?>

@@ -1,0 +1,5 @@
+<?
+$sSectionName = "Авторизация / Регистрация";
+$arDirProperties = [
+
+];

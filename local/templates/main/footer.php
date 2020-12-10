@@ -122,7 +122,7 @@
 			    ),
 			    false
 			);?>
-                    <a href="#">Политика конфиденциальности</a>
+                    <a href="<?=SITE_DIR;?>politika-konfidencialnosti/">Политика конфиденциальности</a>
                 </div>
             </div>
         </footer>

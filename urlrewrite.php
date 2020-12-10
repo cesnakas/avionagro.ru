@@ -32,4 +32,12 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/rest/index.php',
     'SORT' => 100,
   ),
+  4 =>
+  array (
+    'CONDITION' => '#^/politika-konfidencialnosti/.*#',
+    'RULE' => '/politika-konfidencialnosti/',
+    'ID' => '',
+    'PATH' => '/politika-konfidencialnosti.php',
+    'SORT' => 100,
+  ),
 );

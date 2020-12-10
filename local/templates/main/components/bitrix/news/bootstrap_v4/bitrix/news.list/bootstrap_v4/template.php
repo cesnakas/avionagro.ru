@@ -14,13 +14,14 @@ $this->setFrameMode(true);
 
 $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_THEME'] : '';
 ?>
-<div class="row news-list<?=$themeClass?>">
+
+<div class="news __row __news-list<?=$themeClass?>">
 	<div class="col">
 		<?if($arParams["DISPLAY_TOP_PAGER"]):?>
 			<?=$arResult["NAV_STRING"]?><br />
 		<?endif;?>
 
-		<div class="row">
+		<div class="news__box __row">
 			<?foreach($arResult["ITEMS"] as $arItem):?>
 				<?
 					$this->AddEditAction(
@@ -41,7 +42,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 					);
 				?>
 				<div class="news-list-item mb-2 col-sm" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-					<div class="card">
+					<div class="news__item card">
 						<?if($arParams["DISPLAY_PICTURE"]!="N"):?>
 
 							<?
@@ -182,9 +183,9 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 						<div class="card-body">
 
 							<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
-								<h4 class="card-title">
+								<h4 class="__card-title">
 									<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-										<a href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><?echo $arItem["NAME"]?></a>
+										<a class="news__item_title" href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><?echo $arItem["NAME"]?></a>
 									<?else:?>
 										<?echo $arItem["NAME"]?>
 									<?endif;?>
@@ -192,7 +193,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 							<?endif;?>
 
 							<?if($arParams["DISPLAY_PREVIEW_TEXT"]!="N" && $arItem["PREVIEW_TEXT"]):?>
-								<p class="card-text"><?echo $arItem["PREVIEW_TEXT"];?></p>
+								<p class="news__item_subtitle __card-text"><?echo $arItem["PREVIEW_TEXT"];?></p>
 							<?endif;?>
 
 							<?foreach($arItem["FIELDS"] as $code=>$value):?>
@@ -274,8 +275,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 
 								<?if($arParams["DISPLAY_DATE"]!="N" && $arItem["DISPLAY_ACTIVE_FROM"]):?>
 									<div class="news-list-view news-list-post-params">
-										<span class="news-list-icon news-list-icon-calendar"></span>
-										<span class="news-list-param"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>
+										<!--<span class="news-list-icon news-list-icon-calendar"></span>-->
+										<span class="news__item_data __news-list-param"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></span>
 									</div>
 								<?endif?>
 
@@ -302,8 +303,10 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 							</div>
 							<div class="d-flex justify-content-between align-items-center">
 								<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-									<div class="news-list-more">
-										<a class="btn btn-primary btn-sm" href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><?echo GetMessage("CT_BNL_GOTO_DETAIL")?></a>
+									<div class="news__item_next news-list-more">
+										<a class="btn btn-primary btn-sm" href="<?echo $arItem["DETAIL_PAGE_URL"]?>">
+                                            <?echo GetMessage("CT_BNL_GOTO_DETAIL")?>
+                                        </a>
 									</div>
 								<?endif;?>
 								<? if ($arParams["USE_SHARE"] == "Y")

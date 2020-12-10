@@ -113,7 +113,7 @@
                             "PATH_TO_ORDER" => SITE_DIR."personal/order/make/",
                             "PATH_TO_PERSONAL" => SITE_DIR."personal/",
                             "PATH_TO_PROFILE" => SITE_DIR."personal/",
-                            "PATH_TO_REGISTER" => SITE_DIR."login/",
+                            "PATH_TO_REGISTER" => SITE_DIR."auth/",
                             "POSITION_FIXED" => "N",
                             "SHOW_AUTHOR" => "Y",
                             "SHOW_EMPTY_VALUES" => "Y",

@@ -27,7 +27,7 @@ if ($isSidebar) {
 <div class="catalog">
 	<? if ($isFilter || $isSidebar): ?>
 
-    <div class="catalog-aside col-lg-3 col-md-4 col-sm-5<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' d-none d-sm-block' : '')?>">
+    <div class="catalog-aside<?/*col-lg-3 col-md-4 col-sm-5*/?><?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' d-none d-sm-block' : '')?>">
         <?
         //region Filter
         if ($isFilter): ?>
@@ -91,7 +91,7 @@ if ($isSidebar) {
     </div>
 	<?endif?>
 
-	<div class="catalog-content <?=(($isFilter || $isSidebar) ? "col-lg-9 col-md-8 col-sm-7" : "col")?>">
+	<div class="catalog-content <?/*=(($isFilter || $isSidebar) ? "col-lg-9 col-md-8 col-sm-7" : "col")*/?>">
 		<?
 		if (ModuleManager::isModuleInstalled("sale"))
 		{

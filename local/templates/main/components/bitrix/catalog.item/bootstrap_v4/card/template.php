@@ -23,35 +23,43 @@ use \Bitrix\Main\Localization\Loc;
  */
 ?>
 
-<div class="product-item">
+<div class="catalog-content__item __product-item">
+    <div class="card-product">
+
+        <div class="card-product__stock">
+            <div class="card-product__stock_number active">-25%</div>
+            <div class="card-product__stock_text active">Акция</div>
+        </div>
+
 	<? if ($itemHasDetailUrl): ?>
-	<a class="product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>"
-		data-entity="image-wrapper">
-		<? else: ?>
-		<span class="product-item-image-wrapper" data-entity="image-wrapper">
+	<a class="card-product__box product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>" data-entity="image-wrapper">
+    <? else: ?>
+    <span class="product-item-image-wrapper" data-entity="image-wrapper">
 	<? endif; ?>
-		<span class="product-item-image-slider-slide-container slide" id="<?=$itemIds['PICT_SLIDER']?>"
-			<?=($showSlider ? '' : 'style="display: none;"')?>
-			data-slider-interval="<?=$arParams['SLIDER_INTERVAL']?>" data-slider-wrap="true">
-			<?
-			if ($showSlider)
-			{
-				foreach ($morePhoto as $key => $photo)
-				{
-					?>
-					<span class="product-item-image-slide item <?=($key == 0 ? 'active' : '')?>" style="background-image: url('<?=$photo['SRC']?>');"></span>
-					<?
-				}
-			}
-			?>
+
+		<span class="product-item-image-slider-slide-container slide" id="<?=$itemIds['PICT_SLIDER']?>" <?=($showSlider ? '' : 'style="display: none;"')?> data-slider-interval="<?=$arParams['SLIDER_INTERVAL']?>" data-slider-wrap="true">
+        <? if ($showSlider) : ?>
+            <? foreach ($morePhoto as $key => $photo) : ?>
+            <img class="product-item-image-slide item <?=($key == 0 ? 'active' : '')?>" src="<?=$photo['SRC']?>" alt="<?=$imgTitle?>">
+            <? endforeach; ?>
+        <? endif; ?>
 		</span>
-		<span class="product-item-image-original" id="<?=$itemIds['PICT']?>" style="background-image: url('<?=$item['PREVIEW_PICTURE']['SRC']?>'); <?=($showSlider ? 'display: none;' : '')?>"></span>
+
+		<img
+            class="product-item-image-original"
+            id="<?=$itemIds['PICT']?>"
+            src="<?=$item['PREVIEW_PICTURE']['SRC']?>"
+            loading="lazy"
+            alt="<?=$imgTitle?>"
+            style="<?=($showSlider ? 'display: none;' : '-webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center')?>"
+        />
+
 		<?
 		if ($item['SECOND_PICT'])
 		{
 			$bgImage = !empty($item['PREVIEW_PICTURE_SECOND']) ? $item['PREVIEW_PICTURE_SECOND']['SRC'] : $item['PREVIEW_PICTURE']['SRC'];
 			?>
-			<span class="product-item-image-alternative" id="<?=$itemIds['SECOND_PICT']?>" style="background-image: url('<?=$bgImage?>'); <?=($showSlider ? 'display: none;' : '')?>"></span>
+			<img class="product-item-image-alternative" id="<?=$itemIds['SECOND_PICT']?>" src="<?=$bgImage?>" alt="<?=$imgTitle?>" style="<?=($showSlider ? 'display: none;' : '')?>">
 			<?
 		}
 
@@ -115,6 +123,64 @@ use \Bitrix\Main\Localization\Loc;
 <? else: ?>
 	</span>
 <? endif; ?>
+
+    <div class="card-product__content">
+        <div class="card-product__about">
+
+            <div class="card-product__about_name">
+                <?=$productTitle?>
+            </div>
+            <? if (!empty($item['DISPLAY_PROPERTIES'])) : ?>
+            <? foreach ($item['DISPLAY_PROPERTIES'] as $code => $displayProperty) { ?>
+            <div class="card-product__about_art" data-entity="props-block">
+                <span class="<?=(!isset($item['PROPERTY_CODE_MOBILE'][$code]) ? ' d-none d-sm-block' : '')?>">
+                    <?=$displayProperty['NAME']?>:
+                </span>
+                <span class="<?=(!isset($item['PROPERTY_CODE_MOBILE'][$code]) ? ' d-none d-sm-block' : '')?>">
+                    <?=(is_array($displayProperty['DISPLAY_VALUE'])
+                        ? implode(' / ', $displayProperty['DISPLAY_VALUE'])
+                        : $displayProperty['DISPLAY_VALUE'])?>
+                </span>
+            </div>
+            <? } ?>
+            <? endif; ?>
+            <div class="card-product__about_text">
+                Краткое описание. Здесь может быть несколько строк.
+            </div>
+
+        </div>
+
+        <div class="card-product__buy" data-entity="price-block">
+            <div class="price">
+                <? if ($arParams['SHOW_OLD_PRICE'] === 'Y') : ?>
+                <span class="price__was" id="<?=$itemIds['PRICE_OLD']?>"
+                    <?=($price['RATIO_PRICE'] >= $price['RATIO_BASE_PRICE'] ? 'style="display: none;"' : '')?>>
+                    <?=$price['PRINT_RATIO_BASE_PRICE']?>
+                </span>
+                <? endif; ?>
+                <span class="price__now" id="<?=$itemIds['PRICE']?>">
+                <? if (!empty($price)) {
+                    if ($arParams['PRODUCT_DISPLAY_MODE'] === 'N' && $haveOffers) {
+                        echo Loc::getMessage(
+                            'CT_BCI_TPL_MESS_PRICE_SIMPLE_MODE',
+                            array(
+                                '#PRICE#' => $price['PRINT_RATIO_PRICE'],
+                                '#VALUE#' => $measureRatio,
+                                '#UNIT#' => $minOffer['ITEM_MEASURE']['TITLE']
+                            )
+                        );
+                    } else {
+                        echo $price['PRINT_RATIO_PRICE'];
+                    }
+                } ?>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+        <hr>
+
 	<h3 class="product-item-title">
 		<? if ($itemHasDetailUrl): ?>
 		<a href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$productTitle?>">
@@ -124,6 +190,7 @@ use \Bitrix\Main\Localization\Loc;
 		</a>
 	<? endif; ?>
 	</h3>
+
 	<?
 	if (!empty($arParams['PRODUCT_BLOCKS_ORDER']))
 	{
@@ -635,13 +702,9 @@ use \Bitrix\Main\Localization\Loc;
 			}
 		}
 	}
+	?>
 
-	if (
-		$arParams['DISPLAY_COMPARE']
-		&& (!$haveOffers || $arParams['PRODUCT_DISPLAY_MODE'] === 'Y')
-	)
-	{
-		?>
+	<? if ($arParams['DISPLAY_COMPARE'] && (!$haveOffers || $arParams['PRODUCT_DISPLAY_MODE'] === 'Y')) { ?>
 		<div class="product-item-compare-container">
 			<div class="product-item-compare">
 				<div class="checkbox">
@@ -652,7 +715,7 @@ use \Bitrix\Main\Localization\Loc;
 				</div>
 			</div>
 		</div>
-		<?
-	}
-	?>
+    <? } ?>
+
+    </div>
 </div>

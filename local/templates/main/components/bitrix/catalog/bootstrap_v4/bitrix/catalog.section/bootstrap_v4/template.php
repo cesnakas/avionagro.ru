@@ -156,8 +156,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 
 ?>
 
-<div class="row<?=$themeClass?>"> <? // wrapper ?>
-	<div class="col">
+<div class="catalog-content__list<?/*=$themeClass*/?>"> <? // row wrapper ?>
+	<!--<div class="col">-->
 	<?
 	//region Pagination
 	if ($showTopPager)
@@ -187,7 +187,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 	}
 	//endregion
 	?>
-		<div class="mb-4 catalog-section" data-entity="<?=$containerName?>">
+		<!--<div class="mb-4 catalog-section" data-entity="<?/*=$containerName*/?>">-->
 			<!-- items-container -->
 			<?
 			if (!empty($arResult['ITEMS']) && !empty($arResult['ITEM_ROWS']))
@@ -206,7 +206,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 				{
 					$rowItems = array_splice($arResult['ITEMS'], 0, $rowData['COUNT']);
 					?>
-					<div class="row <?=$rowData['CLASS']?>" data-entity="items-row">
+					<!--<div class="__row <?/*=$rowData['CLASS']*/?>" data-entity="items-row">-->
 						<?
 						switch ($rowData['VARIANT'])
 						{
@@ -305,7 +305,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 								foreach ($rowItems as $item)
 								{
 									?>
-									<div class="col-6 col-md-3 product-item-small-card">
+									<!--<div class="col-6 col-md-3 product-item-small-card">-->
 										<?
 										$APPLICATION->IncludeComponent(
 											'bitrix:catalog.item',
@@ -327,7 +327,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											array('HIDE_ICONS' => 'Y')
 										);
 										?>
-									</div>
+									<!--</div>-->
 									<?
 								}
 								break;
@@ -655,7 +655,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 								break;
 						}
 						?>
-					</div>
+					<!--</div>-->
 					<?
 				}
 				unset($generalParams, $rowItems);
@@ -674,7 +674,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 			}
 			?>
 			<!-- items-container -->
-		</div>
+		<!--</div>-->
 		<?
 
 		//region LazyLoad Button
@@ -752,6 +752,6 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 		</script>
 
 
-	</div>
+	<!--</div>-->
 </div> <? //end wrapper?>
 <!-- component-end -->

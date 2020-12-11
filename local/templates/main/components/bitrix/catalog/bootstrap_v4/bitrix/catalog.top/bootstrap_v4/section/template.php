@@ -117,13 +117,13 @@ $containerName = 'catalog-top-container';
 		{
 			$rowItems = array_splice($arResult['ITEMS'], 0, $rowData['COUNT']);
 			?>
-			<div class="row <?=$rowData['CLASS']?>" data-entity="items-row">
+			<div class="catalog-content__list __row <?=$rowData['CLASS']?>" data-entity="items-row">
 				<?
 				switch ($rowData['VARIANT'])
 				{
 					case 0:
 						?>
-						<div class="col product-item-small-card">
+						<div class="catalog-content__item col product-item-small-card">
 							<?
 							$item = reset($rowItems);
 							$APPLICATION->IncludeComponent(
@@ -216,7 +216,7 @@ $containerName = 'catalog-top-container';
 						foreach ($rowItems as $item)
 						{
 							?>
-							<div class="col-6 col-md-3 product-item-small-card">
+							<div class=" col-6 col-md-3 product-item-small-card">
 								<?
 								$APPLICATION->IncludeComponent(
 									'bitrix:catalog.item',

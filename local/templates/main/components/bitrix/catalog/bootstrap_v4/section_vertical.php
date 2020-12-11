@@ -11,88 +11,87 @@ use Bitrix\Main\ModuleManager;
  * @var array $arCurSection
  */
 
-if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP']) && $arParams['USE_COMMON_SETTINGS_BASKET_POPUP'] == 'Y')
-{
+if (isset($arParams['USE_COMMON_SETTINGS_BASKET_POPUP']) && $arParams['USE_COMMON_SETTINGS_BASKET_POPUP'] == 'Y') {
 	$basketAction = isset($arParams['COMMON_ADD_TO_BASKET_ACTION']) ? $arParams['COMMON_ADD_TO_BASKET_ACTION'] : '';
-}
-else
-{
+} else {
 	$basketAction = isset($arParams['SECTION_ADD_TO_BASKET_ACTION']) ? $arParams['SECTION_ADD_TO_BASKET_ACTION'] : '';
 }
 
-
-if ($isSidebar)
-{
+if ($isSidebar) {
 	$contentBlockClass = ($isSidebarLeft ? "col-md-9 col-sm-8 order-1 order-sm-2" : "col-md-9 col-sm-8 order-1");
-}
-else
-{
+} else {
 	$contentBlockClass = "col";
 }
 ?>
-<div class="row mb-4 bx-<?=$arParams["TEMPLATE_THEME"]?>">
-	<? if ($isFilter || $isSidebar): ?>
-		<div class="col-lg-3 col-md-4 col-sm-5<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' d-none d-sm-block' : '')?>">
-			<?
-			//region Filter
-			if ($isFilter): ?>
-				<div class="bx-sidebar-block">
-					<?
-					$APPLICATION->IncludeComponent("bitrix:catalog.smart.filter", "bootstrap_v4", array(
-							"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
-							"IBLOCK_ID" => $arParams["IBLOCK_ID"],
-							"SECTION_ID" => $arCurSection['ID'],
-							"FILTER_NAME" => $arParams["FILTER_NAME"],
-							"PRICE_CODE" => $arParams["~PRICE_CODE"],
-							"CACHE_TYPE" => $arParams["CACHE_TYPE"],
-							"CACHE_TIME" => $arParams["CACHE_TIME"],
-							"CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
-							"SAVE_IN_SESSION" => "N",
-							"FILTER_VIEW_MODE" => $arParams["FILTER_VIEW_MODE"],
-							"XML_EXPORT" => "N",
-							"SECTION_TITLE" => "NAME",
-							"SECTION_DESCRIPTION" => "DESCRIPTION",
-							'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
-							"TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
-							'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
-							'CURRENCY_ID' => $arParams['CURRENCY_ID'],
-							"SEF_MODE" => $arParams["SEF_MODE"],
-							"SEF_RULE" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["smart_filter"],
-							"SMART_FILTER_PATH" => $arResult["VARIABLES"]["SMART_FILTER_PATH"],
-							"PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
-							"INSTANT_RELOAD" => $arParams["INSTANT_RELOAD"],
-						),
-						$component,
-						array('HIDE_ICONS' => 'Y')
-					);
-					?>
-				</div>
-			<? endif
-			//endregion
-			?>
 
-			<?
-			//region Sidebar
-			if ($isSidebar): ?>
-				<div class="d-none d-sm-block">
-					<? $APPLICATION->IncludeComponent("bitrix:main.include", "", Array(
-							"AREA_FILE_SHOW" => "file",
-							"PATH" => $arParams["SIDEBAR_PATH"],
-							"AREA_FILE_RECURSIVE" => "N",
-							"EDIT_MODE" => "html",
-						),
-						false,
-						array('HIDE_ICONS' => 'Y')
-					);
-					?>
-				</div>
-			<? endif
-			//endregion
-			?>
-		</div>
+<div class="catalog">
+	<? if ($isFilter || $isSidebar): ?>
+
+    <div class="catalog-aside col-lg-3 col-md-4 col-sm-5<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' d-none d-sm-block' : '')?>">
+        <?
+        //region Filter
+        if ($isFilter): ?>
+            <div class="bx-sidebar-block">
+                <?
+                $APPLICATION->IncludeComponent("bitrix:catalog.smart.filter", "bootstrap_v4", array(
+                        "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
+                        "IBLOCK_ID" => $arParams["IBLOCK_ID"],
+                        "SECTION_ID" => $arCurSection['ID'],
+                        "FILTER_NAME" => $arParams["FILTER_NAME"],
+                        "PRICE_CODE" => $arParams["~PRICE_CODE"],
+                        "CACHE_TYPE" => $arParams["CACHE_TYPE"],
+                        "CACHE_TIME" => $arParams["CACHE_TIME"],
+                        "CACHE_GROUPS" => $arParams["CACHE_GROUPS"],
+                        "SAVE_IN_SESSION" => "N",
+                        "FILTER_VIEW_MODE" => $arParams["FILTER_VIEW_MODE"],
+                        "XML_EXPORT" => "N",
+                        "SECTION_TITLE" => "NAME",
+                        "SECTION_DESCRIPTION" => "DESCRIPTION",
+                        'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
+                        "TEMPLATE_THEME" => $arParams["TEMPLATE_THEME"],
+                        'CONVERT_CURRENCY' => $arParams['CONVERT_CURRENCY'],
+                        'CURRENCY_ID' => $arParams['CURRENCY_ID'],
+                        "SEF_MODE" => $arParams["SEF_MODE"],
+                        "SEF_RULE" => $arResult["FOLDER"].$arResult["URL_TEMPLATES"]["smart_filter"],
+                        "SMART_FILTER_PATH" => $arResult["VARIABLES"]["SMART_FILTER_PATH"],
+                        "PAGER_PARAMS_NAME" => $arParams["PAGER_PARAMS_NAME"],
+                        "INSTANT_RELOAD" => $arParams["INSTANT_RELOAD"],
+                    ),
+                    $component,
+                    array('HIDE_ICONS' => 'Y')
+                );
+                ?>
+            </div>
+        <? endif
+        //endregion
+        ?>
+
+        <?
+        //region Sidebar
+        if ($isSidebar): ?>
+            <div class="d-none d-sm-block">
+                <?
+                $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    Array(
+                        "AREA_FILE_SHOW" => "file",
+                        "PATH" => $arParams["SIDEBAR_PATH"],
+                        "AREA_FILE_RECURSIVE" => "N",
+                        "EDIT_MODE" => "html",
+                    ),
+                    false,
+                    array('HIDE_ICONS' => 'Y')
+                );
+                ?>
+            </div>
+        <? endif
+        //endregion
+        ?>
+    </div>
 	<?endif?>
 
-	<div class="pb-4 <?=(($isFilter || $isSidebar) ? "col-lg-9 col-md-8 col-sm-7" : "col")?>">
+	<div class="catalog-content <?=(($isFilter || $isSidebar) ? "col-lg-9 col-md-8 col-sm-7" : "col")?>">
 		<?
 		if (ModuleManager::isModuleInstalled("sale"))
 		{

@@ -1,4 +1,5 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
+<?
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 
 /** @var array $arParams */
 /** @var array $arResult */
@@ -18,6 +19,7 @@ $this->setFrameMode(true);
 <div class="catalog">
 
 <?
+/*
 $sectionListParams = array(
 	"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 	"IBLOCK_ID" => $arParams["IBLOCK_ID"],
@@ -32,14 +34,23 @@ $sectionListParams = array(
 	"HIDE_SECTION_NAME" => (isset($arParams["SECTIONS_HIDE_SECTION_NAME"]) ? $arParams["SECTIONS_HIDE_SECTION_NAME"] : "N"),
 	"ADD_SECTIONS_CHAIN" => (isset($arParams["ADD_SECTIONS_CHAIN"]) ? $arParams["ADD_SECTIONS_CHAIN"] : '')
 );
-if ($sectionListParams["COUNT_ELEMENTS"] === "Y")
-{
-	$sectionListParams["COUNT_ELEMENTS_FILTER"] = "CNT_ACTIVE";
-	if ($arParams["HIDE_NOT_AVAILABLE"] == "Y")
-	{
+*/
+?>
+
+<? if ($sectionListParams["COUNT_ELEMENTS"] === "Y") { ?>
+    <div class="catalog-aside">
+    <?
+    $sectionListParams["COUNT_ELEMENTS_FILTER"] = "CNT_ACTIVE";
+
+	if ($arParams["HIDE_NOT_AVAILABLE"] == "Y") {
 		$sectionListParams["COUNT_ELEMENTS_FILTER"] = "CNT_AVAILABLE";
 	}
-}
+	?>
+    </div>
+<? } ?>
+
+    <div class="catalog-content">
+<?
 $APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list",
 	"bootstrap_v4",
@@ -47,11 +58,15 @@ $APPLICATION->IncludeComponent(
 	$component,
 	($arParams["SHOW_TOP_ELEMENTS"] !== "N" ? array("HIDE_ICONS" => "Y") : array())
 );
+
 unset($sectionListParams);
 
 if ($arParams["USE_COMPARE"] === "Y")
 {
-	$APPLICATION->IncludeComponent("bitrix:catalog.compare.list", "", array(
+	$APPLICATION->IncludeComponent(
+        "bitrix:catalog.compare.list",
+        "",
+        array(
 			"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 			"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 			"NAME" => $arParams["COMPARE_NAME"],
@@ -78,7 +93,11 @@ if ($arParams["SHOW_TOP_ELEMENTS"] !== "N")
 		$basketAction = isset($arParams['TOP_ADD_TO_BASKET_ACTION']) ? $arParams['TOP_ADD_TO_BASKET_ACTION'] : '';
 	}
 
-	$APPLICATION->IncludeComponent("bitrix:catalog.top", "bootstrap_v4", array(
+
+	$APPLICATION->IncludeComponent(
+        "bitrix:catalog.top",
+        "bootstrap_v4",
+        array(
 			"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 			"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 			"ELEMENT_SORT_FIELD" => $arParams["TOP_ELEMENT_SORT_FIELD"],
@@ -157,8 +176,10 @@ if ($arParams["SHOW_TOP_ELEMENTS"] !== "N")
 		),
 		$component
 	);
+
 	unset($basketAction);
 }
 ?>
+    </div>
 </div>
 <?

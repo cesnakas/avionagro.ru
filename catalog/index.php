@@ -64,12 +64,12 @@ $APPLICATION->SetTitle("Каталог");
         </div>
     </div>-->
 
-    <?$APPLICATION->IncludeComponent(
+    <?/*$APPLICATION->IncludeComponent(
         "bitrix:news.list",
         ".default",
         Array(
             "ACTIVE_DATE_FORMAT" => "d.m.Y",
-            "ADD_SECTIONS_CHAIN" => "Y",
+            "ADD_SECTIONS_CHAIN" => "N",
             "AJAX_MODE" => "N",
             "AJAX_OPTION_ADDITIONAL" => "",
             "AJAX_OPTION_HISTORY" => "N",
@@ -81,11 +81,11 @@ $APPLICATION->SetTitle("Каталог");
             "CACHE_TYPE" => "A",
             "CHECK_DATES" => "Y",
             "DETAIL_URL" => "",
-            "DISPLAY_BOTTOM_PAGER" => "Y",
-            "DISPLAY_DATE" => "Y",
+            "DISPLAY_BOTTOM_PAGER" => "N",
+            "DISPLAY_DATE" => "N",
             "DISPLAY_NAME" => "Y",
             "DISPLAY_PICTURE" => "Y",
-            "DISPLAY_PREVIEW_TEXT" => "Y",
+            "DISPLAY_PREVIEW_TEXT" => "N",
             "DISPLAY_TOP_PAGER" => "N",
             "FIELD_CODE" => array("", ""),
             "FILTER_NAME" => "",
@@ -103,18 +103,18 @@ $APPLICATION->SetTitle("Каталог");
             "PAGER_SHOW_ALL" => "N",
             "PAGER_SHOW_ALWAYS" => "N",
             "PAGER_TEMPLATE" => ".default",
-            "PAGER_TITLE" => "Новости",
+            // "PAGER_TITLE" => "Новости",
             "PARENT_SECTION" => "",
             "PARENT_SECTION_CODE" => "",
             "PREVIEW_TRUNCATE_LEN" => "",
             "PROPERTY_CODE" => array("", ""),
             "SEARCH_PAGE" => "/search/",
-            "SET_BROWSER_TITLE" => "Y",
+            "SET_BROWSER_TITLE" => "N",
             "SET_LAST_MODIFIED" => "N",
-            "SET_META_DESCRIPTION" => "Y",
-            "SET_META_KEYWORDS" => "Y",
+            "SET_META_DESCRIPTION" => "N",
+            "SET_META_KEYWORDS" => "N",
             "SET_STATUS_404" => "N",
-            "SET_TITLE" => "Y",
+            "SET_TITLE" => "N",
             "SHOW_404" => "N",
             "SLIDER_PROPERTY" => "",
             "SORT_BY1" => "ACTIVE_FROM",
@@ -126,7 +126,7 @@ $APPLICATION->SetTitle("Каталог");
             "USE_RATING" => "N",
             "USE_SHARE" => "N"
         )
-    );?>
+    );*/?>
 
     <div class="container">
 

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/404.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/news/bootstrap_v4/bitrix/news.list/bootstrap_v4/lang/ru/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/news/bootstrap_v4/bitrix/news.list/bootstrap_v4/lang/ru/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/news/bootstrap_v4/bitrix/news.list/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/news/bootstrap_v4/bitrix/news.list/bootstrap_v4/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

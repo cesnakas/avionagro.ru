@@ -151,9 +151,20 @@ use \Bitrix\Main\Localization\Loc;
             </div>
             <? } ?>
             <? endif; ?>
+
             <div class="card-product__about_text">
-                Краткое описание. Здесь может быть несколько строк.
+
+                <? if (!empty($item['PREVIEW_TEXT'])) : ?>
+                    <?=$item['PREVIEW_TEXT'];?>
+                <? else : ?>
+                    <?
+                    $item['DETAIL_TEXT'] = mb_strimwidth($item['DETAIL_TEXT'],0,120,'');
+                    echo $item['DETAIL_TEXT'];
+                    ?>
+                <? endif; ?>
+
             </div>
+
 
         </div>
 
@@ -208,30 +219,26 @@ use \Bitrix\Main\Localization\Loc;
         </button>
     </span>
         <? }  else { ?>
-        <div class="product-item-button-container">
-                    <?
-                    if ($showSubscribe)
-                    {
-                        $APPLICATION->IncludeComponent(
-                            'bitrix:catalog.product.subscribe',
-                            '',
-                            array(
-                                'PRODUCT_ID' => $actualItem['ID'],
-                                'BUTTON_ID' => $itemIds['SUBSCRIBE_LINK'],
-                                'BUTTON_CLASS' => 'btn btn-primary '.$buttonSizeClass,
-                                'DEFAULT_DISPLAY' => true,
-                                'MESS_BTN_SUBSCRIBE' => $arParams['~MESS_BTN_SUBSCRIBE'],
-                            ),
-                            $component,
-                            array('HIDE_ICONS' => 'Y')
-                        );
-                    }
-                    ?>
-                    <button class="btn btn-link <?=$buttonSizeClass?>"
-                            id="<?=$itemIds['NOT_AVAILABLE_MESS']?>" href="javascript:void(0)" rel="nofollow">
-                        <?=$arParams['MESS_NOT_AVAILABLE']?>
-                    </button>
-        </div>
+    <div id="<?=$itemIds['NOT_AVAILABLE_MESS']?>" style="text-align: center">
+        <span class="price__now"><?=$arParams['MESS_NOT_AVAILABLE']?></span>
+    </div>
+    <button type="button" class="basket_btn">
+        <? if ($showSubscribe) {
+            $APPLICATION->IncludeComponent(
+                'bitrix:catalog.product.subscribe',
+                '',
+                array(
+                    'PRODUCT_ID' => $actualItem['ID'],
+                    'BUTTON_ID' => $itemIds['SUBSCRIBE_LINK'],
+                    'BUTTON_CLASS' => 'basket_btn',// 'btn btn-primary '.$buttonSizeClass,
+                    'DEFAULT_DISPLAY' => true,
+                    'MESS_BTN_SUBSCRIBE' => $arParams['~MESS_BTN_SUBSCRIBE'],
+                ),
+                $component,
+                array('HIDE_ICONS' => 'Y')
+            );
+        } ?>
+    </button>
         <? } ?>
 
     <? else :

@@ -29,12 +29,17 @@ else
 $isSidebar = ($arParams['SIDEBAR_DETAIL_SHOW'] == 'Y' && !empty($arParams['SIDEBAR_PATH']));
 $isSidebarLeft = isset($arParams['SIDEBAR_SECTION_POSITION']) && $arParams['SIDEBAR_SECTION_POSITION'] === 'left';
 ?>
-<div class="row bx-<?=$arParams['TEMPLATE_THEME']?>">
-	<div class='<?=($isSidebar ? 'col-md-9 col-sm-8' : 'col')?>'>
+
+<div class="product __row __bx-<?=$arParams['TEMPLATE_THEME']?>">
+
+	<div class="__product-content <?/*=($isSidebar ? 'col-md-9 col-sm-8' : 'col')*/?>">
 		<?
 		if ($arParams["USE_COMPARE"] === "Y")
 		{
-			$APPLICATION->IncludeComponent("bitrix:catalog.compare.list", "bootstrap_v4", array(
+			$APPLICATION->IncludeComponent(
+                "bitrix:catalog.compare.list",
+                "bootstrap_v4",
+                array(
 					"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 					"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 					"NAME" => $arParams["COMPARE_NAME"],

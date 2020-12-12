@@ -54,15 +54,18 @@ use \Bitrix\Main\Localization\Loc;
             style="<?=($showSlider ? 'display: none;' : '-webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center')?>"
         />
 
-		<?
-		if ($item['SECOND_PICT'])
-		{
+		<?/* if ($item['SECOND_PICT']) :
 			$bgImage = !empty($item['PREVIEW_PICTURE_SECOND']) ? $item['PREVIEW_PICTURE_SECOND']['SRC'] : $item['PREVIEW_PICTURE']['SRC'];
-			?>
-			<img class="product-item-image-alternative" id="<?=$itemIds['SECOND_PICT']?>" src="<?=$bgImage?>" alt="<?=$imgTitle?>" style="<?=($showSlider ? 'display: none;' : '')?>">
-			<?
-		}
+        ?>
+        <img
+            class="product-item-image-alternative"
+            id="<?=$itemIds['SECOND_PICT']?>"
+            src="<?=$bgImage?>" alt="<?=$imgTitle?>"
+            style="<?=($showSlider ? 'display: none;' : '')?>"
+        />
+        <? endif; */?>
 
+		<?
 		if ($arParams['SHOW_DISCOUNT_PERCENT'] === 'Y')
 		{
 			?>

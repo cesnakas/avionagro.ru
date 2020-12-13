@@ -160,6 +160,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											src="<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>"
 											alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
 											title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                                            height="160px"
+                                            style="-webkit-object-fit: cover; object-fit: cover;-webkit-object-position: center; object-position: center"
 										/>
 									</a>
 									<?
@@ -172,6 +174,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										class="card-img-top"
 										alt="<?= $arItem["PREVIEW_PICTURE"]["ALT"] ?>"
 										title="<?= $arItem["PREVIEW_PICTURE"]["TITLE"] ?>"
+                                        height="160px"
+                                        style="-webkit-object-fit: cover; object-fit: cover;-webkit-object-position: center; object-position: center"
 									/>
 								<?
 								}
@@ -185,7 +189,9 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 							<?if($arParams["DISPLAY_NAME"]!="N" && $arItem["NAME"]):?>
 								<h4 class="__card-title">
 									<?if(!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])):?>
-										<a class="news__item_title" href="<?echo $arItem["DETAIL_PAGE_URL"]?>"><?echo $arItem["NAME"]?></a>
+										<a class="news__item_title" href="<?echo $arItem["DETAIL_PAGE_URL"]?>" style="text-decoration: none">
+                                            <?echo $arItem["NAME"]?>
+                                        </a>
 									<?else:?>
 										<?echo $arItem["NAME"]?>
 									<?endif;?>

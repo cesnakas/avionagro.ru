@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/news.list/bootstrap_v4/lang/ru/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/news.list/bootstrap_v4/lang/ru/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <workItem from="1607412253454" duration="8248000" />
       <workItem from="1607501001925" duration="11687000" />
       <workItem from="1607576341632" duration="17893000" />
-      <workItem from="1607853499986" duration="1434000" />
+      <workItem from="1607853499986" duration="1680000" />
     </task>
     <servers />
   </component>

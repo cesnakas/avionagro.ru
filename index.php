@@ -70,51 +70,6 @@ $APPLICATION->SetTitle("AVION");
             )
         );?>
 
-        <!--<div class="category">
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Кормоизготови&shy;тельная техника</span>
-                </div>
-            </a>
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Почвообрабаты&shy;вающая техника</span>
-                </div>
-            </a>
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Пневматические (вакуумные) сеялки точного высева</span>
-                </div>
-            </a>
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Смесители-раз&shy;датчики кормов</span>
-                </div>
-            </a>
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Разбрасыватели навоза и бочки для навозной жижи</span>
-                </div>
-            </a>
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Системы орошения</span>
-                </div>
-            </a>
-            <a class="category__item" href="#">
-                <div class="category__content">
-                    <div class="category__content_icon"></div>
-                    <span>Техника фирмы</span>
-                </div>
-            </a>
-        </div>-->
-
         <div class="banner-sell">
             <div class="text-sell">Сезонная распродажа</div>
             <div class="banner-sell__content">
@@ -326,8 +281,12 @@ $APPLICATION->SetTitle("AVION");
     </div>
 
     <div class="promotion">
-        <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/promotion1.png" alt=""></a>
-        <a href="#"><img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/promotion2.png" alt=""></a>
+        <a href="#">
+            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/promotion1.png" alt="">
+        </a>
+        <a href="#">
+            <img src="<?=SITE_TEMPLATE_PATH;?>/img/banner/promotion2.png" alt="">
+        </a>
     </div>
 
     <div class="about-wrapper">

@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/images/line-empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/images/tile-empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/lang/en/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/lang/en/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/lang/ru/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/lang/ru/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/result_modifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/header-catalog/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +45,17 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SC\Documents\GitHub\avion\local\templates\main\components\bitrix\catalog.section.list" />
       <recent name="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4" />
       <recent name="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\auth" />
       <recent name="C:\Users\SC\Documents\GitHub\avion\local\templates\main\components\bitrix\sale.basket.basket.line" />
-      <recent name="C:\Users\SC\Documents\GitHub\avion\local\templates\main\components\bitrix\menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/local/templates/main/components/bitrix" />
@@ -66,7 +77,7 @@
       <workItem from="1607576341632" duration="17893000" />
       <workItem from="1607853499986" duration="1680000" />
       <workItem from="1607925556766" duration="540000" />
-      <workItem from="1607928707269" duration="11171000" />
+      <workItem from="1607928707269" duration="13412000" />
     </task>
     <servers />
   </component>

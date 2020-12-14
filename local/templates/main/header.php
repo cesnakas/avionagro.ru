@@ -28,7 +28,9 @@
     <div class="page">
 
         <header>
+
             <div class="container">
+
                 <div class="header-top">
                     <div class="header-top__contacts">
 
@@ -311,39 +313,45 @@
                 </div>
 
             </div>
+
             <div class="header-catalog">
                 <ul class="header-catalog__list">
-                    <li class="header-catalog__item">
-                        <span>Техника</span>
-                        <ul class="header-catalog__sublist">
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Кормоизготовительная техника</a>
-                            </li>
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Почвообрабатывающая техника</a>
-                            </li>
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Пневматические (вакуумные) сеялки точного высева</a>
-                            </li>
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Смесители-раздатчики кормов</a>
-                            </li>
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Разбрасыватели навоза и бочки для навозной жижи</a>
-                            </li>
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Системы орошения</a>
-                            </li>
-                            <li class="header-catalog__subitem">
-                                <a href="<?=SITE_DIR;?>catalog/">Техника фирмы</a>
-                            </li>
-                        </ul>
-                    </li>
+
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.section.list",
+                        "header-catalog",
+                        Array(
+                            "0" => "",
+                            "ADD_SECTIONS_CHAIN" => "N",
+                            "CACHE_FILTER" => "N",
+                            "CACHE_GROUPS" => "Y",
+                            "CACHE_TIME" => "36000000",
+                            "CACHE_TYPE" => "A",
+                            "COUNT_ELEMENTS" => "N",
+                            "COUNT_ELEMENTS_FILTER" => "CNT_ACTIVE",
+                            "FILTER_NAME" => "sectionsFilter",
+                            "HIDE_SECTION_NAME" => "N",
+                            "IBLOCK_ID" => "1",
+                            "IBLOCK_TYPE" => "catalog",
+                            "LIST_COLUMNS_COUNT" => "4",
+                            "SECTION_CODE" => "",
+                            "SECTION_FIELDS" => array("",""),
+                            "SECTION_ID" => "1",
+                            "SECTION_URL" => "",
+                            "SECTION_USER_FIELDS" => array("",""),
+                            "SHOW_PARENT_NAME" => "Y",
+                            "TOP_DEPTH" => "1",
+                            "VIEW_MODE" => "LIST"
+                        )
+                    );?>
+
                     <li class="header-catalog__item">
                         <a href="<?=SITE_DIR;?>catalog/zapchasti/"><span>Запчасти</span></a>
                     </li>
+
                 </ul>
             </div>
+
         </header>
 
         <div class="callback-form">

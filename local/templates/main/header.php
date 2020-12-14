@@ -333,7 +333,7 @@
                             "HIDE_SECTION_NAME" => "N",
                             "IBLOCK_ID" => "1",
                             "IBLOCK_TYPE" => "catalog",
-                            "LIST_COLUMNS_COUNT" => "4",
+                            "LIST_COLUMNS_COUNT" => "",
                             "SECTION_CODE" => "",
                             "SECTION_FIELDS" => array("",""),
                             "SECTION_ID" => "1",

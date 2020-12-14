@@ -41,7 +41,36 @@ $APPLICATION->SetTitle("AVION");
     </div>
 
     <div class="container">
-        <div class="category">
+
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:catalog.section.list",
+            "bootstrap_v4",
+            Array(
+                "0" => "",
+                "ADD_SECTIONS_CHAIN" => "N",
+                "CACHE_FILTER" => "N",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "36000000",
+                "CACHE_TYPE" => "A",
+                "COUNT_ELEMENTS" => "N",
+                "COUNT_ELEMENTS_FILTER" => "CNT_ACTIVE",
+                "FILTER_NAME" => "sectionsFilter",
+                "HIDE_SECTION_NAME" => "N",
+                "IBLOCK_ID" => "1",
+                "IBLOCK_TYPE" => "catalog",
+                "LIST_COLUMNS_COUNT" => "4",
+                "SECTION_CODE" => "",
+                "SECTION_FIELDS" => array("",""),
+                "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                "SECTION_URL" => "",
+                "SECTION_USER_FIELDS" => array("",""),
+                "SHOW_PARENT_NAME" => "Y",
+                "TOP_DEPTH" => "2",
+                "VIEW_MODE" => "TILE"
+            )
+        );?>
+
+        <!--<div class="category">
             <a class="category__item" href="#">
                 <div class="category__content">
                     <div class="category__content_icon"></div>
@@ -84,7 +113,8 @@ $APPLICATION->SetTitle("AVION");
                     <span>Техника фирмы</span>
                 </div>
             </a>
-        </div>
+        </div>-->
+
         <div class="banner-sell">
             <div class="text-sell">Сезонная распродажа</div>
             <div class="banner-sell__content">
@@ -292,6 +322,7 @@ $APPLICATION->SetTitle("AVION");
                 <div class="swiper-button-next sell-button-next"></div>
             </div>
         </div>
+
     </div>
 
     <div class="promotion">
@@ -507,43 +538,8 @@ $APPLICATION->SetTitle("AVION");
                 )
             );?>
 
-            <?/*
-            <div class="news__box">
-                <a class="news__item" href="#">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/img/news/banner.png" alt="">
-                    <span class="news__item_title">Заголовок новости</span>
-                    <span class="news__item_subtitle">Краткое описание. Здесь может быть несколько строк.</span>
-                    <span class="news__item_data">21 октября 2020</span>
-                    <span class="news__item_next">Читать дальше  →</span>
-                </a>
-                <a class="news__item" href="#">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/img/news/banner.png" alt="">
-                    <span class="news__item_title">Заголовок новости</span>
-                    <span class="news__item_subtitle">Краткое описание. Здесь может быть несколько строк.</span>
-                    <span class="news__item_data">21 октября 2020</span>
-                    <span class="news__item_next">Читать дальше  →</span>
-                </a>
-                <a class="news__item" href="#">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/img/news/banner.png" alt="">
-                    <span class="news__item_title">Заголовок новости</span>
-                    <span class="news__item_subtitle">Краткое описание. Здесь может быть несколько строк.</span>
-                    <span class="news__item_data">21 октября 2020</span>
-                    <span class="news__item_next">Читать дальше  →</span>
-                </a>
-                <a class="news__item disable" href="#">
-                    <img src="<?=SITE_TEMPLATE_PATH;?>/img/news/banner.png" alt="">
-                    <span class="news__item_title">Заголовок новости</span>
-                    <span class="news__item_subtitle">Краткое описание. Здесь может быть несколько строк.</span>
-                    <span class="news__item_data">21 октября 2020</span>
-                    <span class="news__item_next">Читать дальше  →</span>
-                </a>
-            </div>
-            <div class="btn-bluelight">Все публикации</div>
-            */?>
         </div>
     </div>
-
-
 
     <div class="main-text">
         <div class="container">

@@ -61,11 +61,11 @@ $APPLICATION->SetTitle("AVION");
                 "LIST_COLUMNS_COUNT" => "4",
                 "SECTION_CODE" => "",
                 "SECTION_FIELDS" => array("",""),
-                "SECTION_ID" => $_REQUEST["SECTION_ID"],
+                "SECTION_ID" => '1', //$_REQUEST["SECTION_ID"],
                 "SECTION_URL" => "",
                 "SECTION_USER_FIELDS" => array("",""),
-                "SHOW_PARENT_NAME" => "Y",
-                "TOP_DEPTH" => "2",
+                "SHOW_PARENT_NAME" => "N",
+                "TOP_DEPTH" => "1",
                 "VIEW_MODE" => "TILE"
             )
         );?>

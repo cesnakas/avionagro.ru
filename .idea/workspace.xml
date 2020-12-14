@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/images/line-empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/images/tile-empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/lang/en/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/lang/ru/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/result_modifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +66,7 @@
       <workItem from="1607576341632" duration="17893000" />
       <workItem from="1607853499986" duration="1680000" />
       <workItem from="1607925556766" duration="540000" />
-      <workItem from="1607928707269" duration="4935000" />
+      <workItem from="1607928707269" duration="11171000" />
     </task>
     <servers />
   </component>

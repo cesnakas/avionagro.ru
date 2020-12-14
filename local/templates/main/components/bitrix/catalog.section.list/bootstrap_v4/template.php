@@ -64,56 +64,57 @@ $strSectionDelete = CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "SECTION_DELET
 $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_CONFIRM'));
 ?>
 
-<!--//-->
+<div class="category">
 
-    <div class="category">
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Кормоизготови&shy;тельная техника</span>
-            </div>
-        </a>
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Почвообрабаты&shy;вающая техника</span>
-            </div>
-        </a>
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Пневматические (вакуумные) сеялки точного высева</span>
-            </div>
-        </a>
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Смесители-раз&shy;датчики кормов</span>
-            </div>
-        </a>
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Разбрасыватели навоза и бочки для навозной жижи</span>
-            </div>
-        </a>
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Системы орошения</span>
-            </div>
-        </a>
-        <a class="category__item" href="#">
-            <div class="category__content">
-                <div class="category__content_icon"></div>
-                <span>Техника фирмы</span>
-            </div>
-        </a>
-    </div>
+    <? if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID']) {
+        $this->AddEditAction($arResult['SECTION']['ID'], $arResult['SECTION']['EDIT_LINK'], $strSectionEdit);
+        $this->AddDeleteAction($arResult['SECTION']['ID'], $arResult['SECTION']['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
+    ?>
+        <h2 id="<? echo $this->GetEditAreaId($arResult['SECTION']['ID']); ?>">
+        <? echo (
+        isset($arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"]) && $arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"] != ""
+            ? $arResult['SECTION']["IPROPERTY_VALUES"]["SECTION_PAGE_TITLE"]
+            : $arResult['SECTION']['NAME']
+        ); ?>
+        </h2>
+    <? } ?>
 
-<!--//-->
+    <? foreach ($arResult['SECTIONS'] as &$arSection) {
+        $this->AddEditAction($arSection['ID'], $arSection['EDIT_LINK'], $strSectionEdit);
+        $this->AddDeleteAction($arSection['ID'], $arSection['DELETE_LINK'], $strSectionDelete, $arSectionDeleteParams);
 
+    if (false === $arSection['PICTURE'])
+        $arSection['PICTURE'] = array(
+            'SRC' => $arCurView['EMPTY_IMG'],
+            'ALT' => (
+                '' != $arSection["IPROPERTY_VALUES"]["SECTION_PICTURE_FILE_ALT"]
+                ? $arSection["IPROPERTY_VALUES"]["SECTION_PICTURE_FILE_ALT"]
+                : $arSection["NAME"]
+            ),
+            'TITLE' => (
+                '' != $arSection["IPROPERTY_VALUES"]["SECTION_PICTURE_FILE_TITLE"]
+                ? $arSection["IPROPERTY_VALUES"]["SECTION_PICTURE_FILE_TITLE"]
+                : $arSection["NAME"]
+            )
+        );
+    ?>
 
+    <a class="category__item" id="<?=$this->GetEditAreaId($arSection['ID']);?>" href="<?=$arSection['SECTION_PAGE_URL'];?>">
+        <div class="category__content">
+            <div class="category__content_icon">
+                <?/*
+                <img src="<?=$arSection['PICTURE']['SRC'];?>" alt="<?=$arSection['PICTURE']['TITLE'];?>">
+                */?>
+            </div>
+            <span><?=$arSection['NAME'];?></span>
+        </div>
+    </a>
+
+    <? } ?>
+
+</div>
+
+<?/*
 <div class="row mb-4">
 	<div class="col">
 		<? if ('Y' == $arParams['SHOW_PARENT_NAME'] && 0 < $arResult['SECTION']['ID'])
@@ -339,3 +340,4 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 		?>
 	</div>
 </div>
+*/?>

@@ -178,6 +178,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 					data-entity="images-slider-block">
 					<span class="product-item-detail-slider-left" data-entity="slider-control-left" style="display: none;"></span>
 					<span class="product-item-detail-slider-right" data-entity="slider-control-right" style="display: none;"></span>
+
 					<div class="product-item-label-text <?=$labelPositionClass?>" id="<?=$itemIds['STICKER_ID']?>"
 						<?=(!$arResult['LABEL'] ? 'style="display: none;"' : '' )?>>
 						<?

@@ -116,8 +116,6 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
 
     <? } ?>
 
-    <? echo "<pre>"; print_r($arResult); echo "</pre>"; ?>
-
 </div>
 
 <?/*

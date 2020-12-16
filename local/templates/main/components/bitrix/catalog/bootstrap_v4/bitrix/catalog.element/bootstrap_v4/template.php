@@ -269,9 +269,30 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 
                 <div class="product-content__right_banner">
 
-                    <div class="product-content__right_banner-img">
-                        <img src="<?=SITE_TEMPLATE_PATH;?>/img/brand/karcher.png" alt="">
-                    </div>
+                    <? if ($arParams['BRAND_USE'] === 'Y') : ?>
+                        <div class="product-content__right_banner-img">
+                            <? $APPLICATION->IncludeComponent(
+                                'bitrix:catalog.brandblock',
+                                'bootstrap_v4',
+                                array(
+                                    'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
+                                    'IBLOCK_ID' => $arParams['IBLOCK_ID'],
+                                    'ELEMENT_ID' => $arResult['ID'],
+                                    'ELEMENT_CODE' => '',
+                                    'PROP_CODE' => $arParams['BRAND_PROP_CODE'],
+                                    'CACHE_TYPE' => $arParams['CACHE_TYPE'],
+                                    'CACHE_TIME' => $arParams['CACHE_TIME'],
+                                    'CACHE_GROUPS' => $arParams['CACHE_GROUPS'],
+                                    'WIDTH' => '',
+                                    'HEIGHT' => ''
+                                ),
+                                $component,
+                                array('HIDE_ICONS' => 'Y')
+                            );
+                            ?>
+                            <img src="<?=SITE_TEMPLATE_PATH;?>/img/brand/karcher.png" alt="">
+                        </div>
+                    <? endif; ?>
 
                     <a class="product-content__right_banner-share" href="#">
 
@@ -294,29 +315,106 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
                 <? endif; ?>
 
                 <div class="product-content__right_availability">В наличии</div>
+
                 <div class="product-content__right_parameter">
                     <div class="product-content__right_parameter-weight">
                         <div class="product-content__right_parameter-text">Вес:</div>
                         <div class="product-content__right_parameter-number">3,300 кг</div>
                     </div>
+
                     <div class="product-content__right_parameter-size">
                         <div class="product-content__right_parameter-text">Габариты:</div>
                         <div class="product-content__right_parameter-number">4,60 х 3,00</div>
                     </div>
                 </div>
+
                 <div class="product-content__right_price">
                     <div class="price">
-                        <div class="price__was">1 234 567 ₽</div>
-                        <div class="price__now">1 234 567 ₽</div>
+
+                        <? if ($arParams['SHOW_OLD_PRICE'] === 'Y') { ?>
+                            <div class="price__was" id="<?=$itemIds['OLD_PRICE_ID']?>" <?=($showDiscount ? '' : 'style="display: none;"')?>>
+                                <?=($showDiscount ? $price['PRINT_RATIO_BASE_PRICE'] : '')?>
+                            </div>
+                        <? } ?>
+
+                        <div class="price__now" id="<?=$itemIds['PRICE_ID']?>">
+                            <?=$price['PRINT_RATIO_PRICE']?>
+                        </div>
+
+                        <?/* if ($arParams['SHOW_OLD_PRICE'] === 'Y') { ?>
+                            <div class="price__now" id="<?=$itemIds['DISCOUNT_PRICE_ID']?>" <?=($showDiscount ? '' : 'style="display: none;"')?>>
+                                <? if ($showDiscount) {
+                                    echo Loc::getMessage('CT_BCE_CATALOG_ECONOMY_INFO2', array('#ECONOMY#' => $price['PRINT_RATIO_DISCOUNT']));
+                                } ?>
+                            </div>
+                        <? } */?>
+
                     </div>
                 </div>
+
                 <div class="product-content__right_buttons">
+
+                    <? if ($arParams['USE_PRODUCT_QUANTITY']): ?>
+                    <div class="product-content__right_buttons-quantity" <?= (!$actualItem['CAN_BUY'] ? ' style="display: none;"' : '') ?> data-entity="quantity-block">
+                        <?/* if (Loc::getMessage('CATALOG_QUANTITY')) { ?>
+                        <div class="product-item-detail-info-container-title text-center"><?= Loc::getMessage('CATALOG_QUANTITY') ?></div>
+                        <? } */?>
+
+                        <div class="product-item-amount">
+                            <div class="product-item-amount-field-container">
+
+                                <span class="buttons-quantity__minus product-item-amount-field-btn-minus no-select" id="<?=$itemIds['QUANTITY_DOWN_ID']?>"></span>
+
+                                <div class="product-item-amount-field-block">
+                                    <input class="number product-item-amount-field" id="<?=$itemIds['QUANTITY_ID']?>" type="number" value="<?=$price['MIN_QUANTITY']?>">
+                                </div>
+
+                                <span class="buttons-quantity__plus product-item-amount-field-btn-plus no-select" id="<?=$itemIds['QUANTITY_UP_ID']?>"></span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <?/*
                     <form class="product-content__right_buttons-quantity" action="">
                         <button class="buttons-quantity__plus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
                         <input type="number" min="1" max="999" value="1" readonly class="number"/>
                         <button class="buttons-quantity__minus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                     </form>
+                    */?>
+
+                    <? endif; ?>
+
                     <div class="product-content__right_buttons-basket">
+
+                        <div data-entity="main-button-container" class="mb-3">
+                            <div id="<?=$itemIds['BASKET_ACTIONS_ID']?>" style="display: <?=($actualItem['CAN_BUY'] ? '' : 'none')?>;">
+
+                                <? if ($showAddBtn) { ?>
+                                <div class="mb-3">
+                                    <a class="btn <?=$showButtonClassName?> product-item-detail-buy-button"
+                                       id="<?=$itemIds['ADD_BASKET_LINK']?>"
+                                       href="javascript:void(0);">
+                                        <?=$arParams['MESS_BTN_ADD_TO_BASKET']?>
+                                    </a>
+                                </div>
+                                <? } ?>
+
+                                <? if ($showBuyBtn) { ?>
+                                <div class="mb-3">
+                                    <a
+                                        class="basket_btn __btn __<?=$buyButtonClassName?> __product-item-detail-buy-button"
+                                        id="<?=$itemIds['BUY_LINK']?>"
+                                        href="javascript:void(0);">
+                                            <?=$arParams['MESS_BTN_BUY']?>
+                                    </a>
+                                </div>
+                                <? } ?>
+
+                            </div>
+                        </div>
+
                         <a class="basket" href="#2">
                             <button class="basket_btn">
                                 <div class="basket_content-out">
@@ -334,6 +432,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
                             </button>
                         </a>
                     </div>
+
                 </div>
 
             </div><!-- /product-content__right -->

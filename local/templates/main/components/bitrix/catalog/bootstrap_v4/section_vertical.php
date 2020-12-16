@@ -24,6 +24,8 @@ if ($isSidebar) {
 }
 ?>
 
+<div class="container">
+
 <div class="catalog">
 	<? if ($isFilter || $isSidebar): ?>
 
@@ -530,4 +532,6 @@ if ($isSidebar) {
 		}
 		?>
 	</div>
+</div>
+
 </div>

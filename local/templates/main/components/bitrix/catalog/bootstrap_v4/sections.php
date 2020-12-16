@@ -16,6 +16,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
 ?>
 
+<div class="container">
 <div class="catalog">
 
 <?
@@ -181,5 +182,6 @@ if ($arParams["SHOW_TOP_ELEMENTS"] !== "N")
 }
 ?>
     </div>
+</div>
 </div>
 <?

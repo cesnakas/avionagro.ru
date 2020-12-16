@@ -29,6 +29,9 @@ else
 	$contentBlockClass = "col";
 }
 ?>
+
+<div class="container">
+
 <div class="row mb-4 <?=$arParams["TEMPLATE_THEME"]?>">
 	<div class="<?=$contentBlockClass?>">
 
@@ -526,4 +529,6 @@ else
 			?>
 		</div>
 	<? endif ?>
+</div>
+
 </div>

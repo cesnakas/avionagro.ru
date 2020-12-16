@@ -4,8 +4,10 @@
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.element/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.element/bootstrap_v4/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.element/bootstrap_v4/template_old.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.element/bootstrap_v4/template_old.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_horizontal.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_horizontal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_vertical.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_vertical.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/sections.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/sections.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,8 @@
       <workItem from="1607853499986" duration="1680000" />
       <workItem from="1607925556766" duration="540000" />
       <workItem from="1607928707269" duration="14996000" />
-      <workItem from="1608016338613" duration="11830000" />
+      <workItem from="1608016338613" duration="12443000" />
+      <workItem from="1608097930731" duration="2739000" />
     </task>
     <servers />
   </component>

@@ -102,15 +102,21 @@ $arSectionDeleteParams = array("CONFIRM" => GetMessage('CT_BCSL_ELEMENT_DELETE_C
     <a class="category__item" id="<?=$this->GetEditAreaId($arSection['ID']);?>" href="<?=$arSection['SECTION_PAGE_URL'];?>">
         <div class="category__content">
             <div class="category__content_icon">
-                <?/*
-                <img src="<?=$arSection['PICTURE']['SRC'];?>" alt="<?=$arSection['PICTURE']['TITLE'];?>">
-                */?>
+                <? if (empty($arResult['PICTURE']['SRC'])) : ?>
+                <img
+                    src="<?=$arSection['PICTURE']['SRC'];?>"
+                    alt="<?=$arSection['PICTURE']['TITLE'];?>"
+                    style=""
+                />
+                <? endif; ?>
             </div>
             <span><?=$arSection['NAME'];?></span>
         </div>
     </a>
 
     <? } ?>
+
+    <? echo "<pre>"; print_r($arResult); echo "</pre>"; ?>
 
 </div>
 

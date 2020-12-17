@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("О компании");
 
     <div class="container">
 
-
+Текст страницы "О компании"
 
     </div>
 

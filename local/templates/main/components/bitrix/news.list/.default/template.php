@@ -14,42 +14,34 @@ if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->setFrameMode(true);
 ?>
 
-    <div class="container-banner">
-        <div class="banner-ad">
-            <div class="swiper-container slider-banner-ad">
+<div class="swiper-container slider-banner-ad">
 
-                <div class="swiper-wrapper">
-
-                    <?foreach($arResult["ITEMS"] as $arItem):?>
-                        <?
-                        $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
-                        $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
-                        ?>
-                        <div class="swiper-slide" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
-                            <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
-                                <img
-                                class=""
-                                src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
-                                width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>"
-                                height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>"
-                                alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
-                                title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
-                                style="max-height: 440px; -webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center"
-                                />
-                            </a>
-                        </div>
-
-                    <?endforeach;?>
-
-                </div>
-
-                <div class="swiper-pagination banner-pagination"></div>
-                <div class="swiper-button-prev banner-button-prev"></div>
-                <div class="swiper-button-next banner-button-next"></div>
-
+    <div class="swiper-wrapper">
+        <?foreach($arResult["ITEMS"] as $arItem):?>
+            <?
+            $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
+            $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BNL_ELEMENT_DELETE_CONFIRM')));
+            ?>
+            <div class="swiper-slide" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
+                <a href="<?=$arItem["DETAIL_PAGE_URL"]?>">
+                    <img
+                        src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>"
+                        width="<?=$arItem["PREVIEW_PICTURE"]["WIDTH"]?>"
+                        height="<?=$arItem["PREVIEW_PICTURE"]["HEIGHT"]?>"
+                        alt="<?=$arItem["PREVIEW_PICTURE"]["ALT"]?>"
+                        title="<?=$arItem["PREVIEW_PICTURE"]["TITLE"]?>"
+                        style="max-height: 440px; -webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center"
+                    />
+                </a>
             </div>
-        </div>
+        <?endforeach;?>
     </div>
+
+    <div class="swiper-pagination banner-pagination"></div>
+    <div class="swiper-button-prev banner-button-prev"></div>
+    <div class="swiper-button-next banner-button-next"></div>
+
+</div>
 
 <?/*
 <div class="news-list">

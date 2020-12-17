@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/about/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.section.list/bootstrap_v4/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/news.list/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/news.list/.default/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <workItem from="1608097930731" duration="16353000" />
       <workItem from="1608136538460" duration="1994000" />
       <workItem from="1608139073992" duration="34000" />
-      <workItem from="1608182934249" duration="6532000" />
+      <workItem from="1608182934249" duration="7673000" />
     </task>
     <servers />
   </component>

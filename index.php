@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("AVION");
             <?$APPLICATION->IncludeComponent(
                 "bitrix:news.list",
                 ".default",
-                Array(
+                array(
                     "ACTIVE_DATE_FORMAT" => "d.m.Y",
                     "ADD_SECTIONS_CHAIN" => "N",
                     "AJAX_MODE" => "N",
@@ -31,11 +31,14 @@ $APPLICATION->SetTitle("AVION");
                     "DISPLAY_PICTURE" => "Y",
                     "DISPLAY_PREVIEW_TEXT" => "N",
                     "DISPLAY_TOP_PAGER" => "N",
-                    "FIELD_CODE" => array("",""),
+                    "FIELD_CODE" => array(
+                        0 => "",
+                        1 => "",
+                    ),
                     "FILTER_NAME" => "",
                     "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                    "IBLOCK_ID" => "2",
-                    "IBLOCK_TYPE" => "news",
+                    "IBLOCK_ID" => "3",
+                    "IBLOCK_TYPE" => "banners",
                     "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
                     "INCLUDE_SUBSECTIONS" => "Y",
                     "MESSAGE_404" => "",
@@ -50,7 +53,10 @@ $APPLICATION->SetTitle("AVION");
                     "PARENT_SECTION" => "",
                     "PARENT_SECTION_CODE" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
-                    "PROPERTY_CODE" => array("",""),
+                    "PROPERTY_CODE" => array(
+                        0 => "",
+                        1 => "",
+                    ),
                     "SET_BROWSER_TITLE" => "Y",
                     "SET_LAST_MODIFIED" => "N",
                     "SET_META_DESCRIPTION" => "Y",
@@ -62,8 +68,10 @@ $APPLICATION->SetTitle("AVION");
                     "SORT_BY2" => "SORT",
                     "SORT_ORDER1" => "DESC",
                     "SORT_ORDER2" => "ASC",
-                    "STRICT_SECTION_CHECK" => "N"
-                )
+                    "STRICT_SECTION_CHECK" => "N",
+                    "COMPONENT_TEMPLATE" => ".default"
+                ),
+                false
             );?>
 
         </div>
@@ -323,15 +331,20 @@ $APPLICATION->SetTitle("AVION");
             <div class="about">
                 <div class="about__left">
                     <div class="about__text">
+
                         <span class="about__text_title">
                             Мы поставляем только лучшую технику и сертифицированные запчасти
                         </span>
+
                         <span class="about__text_subtitle">
                             Текст для SEO. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </span>
+
                     </div>
                     <div class="about__how">
+
                         <span class="about__how_title">Как мы работаем?</span>
+
                         <div class="about__box">
                             <div class="about__boxitem">
                                 <div class="about__path">
@@ -361,7 +374,9 @@ $APPLICATION->SetTitle("AVION");
                         </div>
                     </div>
                 </div>
+
                 <div class="about__right">
+
                     <div class="feedback-form">
                         <div class="feedback-form__title">Нужна консультация?</div>
                         <div class="feedback-form__subtitle">Всё расскажем и покажем.
@@ -437,6 +452,7 @@ $APPLICATION->SetTitle("AVION");
                             </div>
                             <button class="feedback-form__download_del"></button>
                         </div>
+
                         <button class="btn-white">
                             <div class="feedback-form_btn-icon">
                                 <svg width="20" height="20" viewBox="0 0 14 14" fill="none">
@@ -445,88 +461,94 @@ $APPLICATION->SetTitle("AVION");
                             </div>
                             Заказать звонок
                         </button>
+
                         <a class="feedback-form__call" href="#">Позвонить консультанту</a>
+
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
     <div class="news">
-        <div class="container">
-            <div class="news__title">
-                <span class="news__title_name">Новости</span>
-                <a class="news__title_all" href="#">Все публикации  →</a>
-            </div>
 
-            <?$APPLICATION->IncludeComponent(
-                "bitrix:news.list",
-                "bootstrap_v4",
-                Array(
-                    "ACTIVE_DATE_FORMAT" => "d F Y",
-                    "ADD_SECTIONS_CHAIN" => "N",
-                    "AJAX_MODE" => "Y",
-                    "AJAX_OPTION_ADDITIONAL" => "",
-                    "AJAX_OPTION_HISTORY" => "N",
-                    "AJAX_OPTION_JUMP" => "N",
-                    "AJAX_OPTION_STYLE" => "Y",
-                    "CACHE_FILTER" => "Y",
-                    "CACHE_GROUPS" => "Y",
-                    "CACHE_TIME" => "3600",
-                    "CACHE_TYPE" => "A",
-                    "CHECK_DATES" => "Y",
-                    "DETAIL_URL" => "",
-                    "DISPLAY_BOTTOM_PAGER" => "N",
-                    "DISPLAY_DATE" => "Y",
-                    "DISPLAY_NAME" => "Y",
-                    "DISPLAY_PICTURE" => "Y",
-                    "DISPLAY_PREVIEW_TEXT" => "Y",
-                    "DISPLAY_TOP_PAGER" => "N",
-                    "FIELD_CODE" => array(""),
-                    "FILE_404" => "",
-                    "FILTER_NAME" => "",
-                    "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                    "IBLOCK_ID" => "2",
-                    "IBLOCK_TYPE" => "news",
-                    "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-                    "INCLUDE_SUBSECTIONS" => "N",
-                    "MEDIA_PROPERTY" => "",
-                    "MESSAGE_404" => "",
-                    "NEWS_COUNT" => "4",
-                    "PAGER_BASE_LINK" => "",
-                    "PAGER_BASE_LINK_ENABLE" => "Y",
-                    "PAGER_DESC_NUMBERING" => "Y",
-                    "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-                    "PAGER_PARAMS_NAME" => "arrPager",
-                    "PAGER_SHOW_ALL" => "Y",
-                    "PAGER_SHOW_ALWAYS" => "Y",
-                    "PAGER_TEMPLATE" => "bootstrap_v4",
-                    "PAGER_TITLE" => "Новости",
-                    "PARENT_SECTION" => "",
-                    "PARENT_SECTION_CODE" => "",
-                    "PREVIEW_TRUNCATE_LEN" => "",
-                    "PROPERTY_CODE" => array("","DESCRIPTION",""),
-                    "SEARCH_PAGE" => "/search/",
-                    "SET_BROWSER_TITLE" => "N",
-                    "SET_LAST_MODIFIED" => "N",
-                    "SET_META_DESCRIPTION" => "N",
-                    "SET_META_KEYWORDS" => "N",
-                    "SET_STATUS_404" => "Y",
-                    "SET_TITLE" => "N",
-                    "SHOW_404" => "N",
-                    "SLIDER_PROPERTY" => "",
-                    "SORT_BY1" => "ACTIVE_FROM",
-                    "SORT_BY2" => "SORT",
-                    "SORT_ORDER1" => "DESC",
-                    "SORT_ORDER2" => "ASC",
-                    "STRICT_SECTION_CHECK" => "N",
-                    "TEMPLATE_THEME" => "",
-                    "USE_RATING" => "N",
-                    "USE_SHARE" => "N"
-                )
-            );?>
+        <?$APPLICATION->IncludeComponent(
+            "bitrix:news.list",
+            "bootstrap_v4",
+            array(
+                "ACTIVE_DATE_FORMAT" => "d F Y",
+                "ADD_SECTIONS_CHAIN" => "N",
+                "AJAX_MODE" => "N",
+                "AJAX_OPTION_ADDITIONAL" => "",
+                "AJAX_OPTION_HISTORY" => "N",
+                "AJAX_OPTION_JUMP" => "N",
+                "AJAX_OPTION_STYLE" => "Y",
+                "CACHE_FILTER" => "N",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "3600",
+                "CACHE_TYPE" => "A",
+                "CHECK_DATES" => "Y",
+                "DETAIL_URL" => "/news/index.php=?ID=#ELEMENT_ID#/", // .$_REQUEST["ELEMENT_ID"],
+                "DISPLAY_DATE" => "Y",
+                "DISPLAY_NAME" => "Y",
+                "DISPLAY_PICTURE" => "Y",
+                "DISPLAY_PREVIEW_TEXT" => "Y",
+                "FIELD_CODE" => array(
+                    0 => "",
+                    1 => "",
+                ),
+                "FILE_404" => "",
+                "FILTER_NAME" => "",
+                "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                "IBLOCK_ID" => "2",
+                "IBLOCK_TYPE" => "news",
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                "INCLUDE_SUBSECTIONS" => "N",
+                "MEDIA_PROPERTY" => "",
+                "MESSAGE_404" => "",
+                "NEWS_COUNT" => "4",
+                "PAGER_BASE_LINK" => "",
+                "PAGER_BASE_LINK_ENABLE" => "Y",
+                "PAGER_DESC_NUMBERING" => "Y",
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                "PAGER_PARAMS_NAME" => "arrPager",
+                "PAGER_SHOW_ALL" => "Y",
+                "PAGER_SHOW_ALWAYS" => "Y",
+                "PAGER_TEMPLATE" => "bootstrap_v4",
+                "PAGER_TITLE" => "Новости",
+                "PARENT_SECTION" => "",
+                "PARENT_SECTION_CODE" => "",
+                "PREVIEW_TRUNCATE_LEN" => "",
+                "PROPERTY_CODE" => array(
+                    0 => "",
+                    1 => "DESCRIPTION",
+                    2 => "",
+                ),
+                "SEARCH_PAGE" => "/search/",
+                "SET_BROWSER_TITLE" => "N",
+                "SET_LAST_MODIFIED" => "N",
+                "SET_META_DESCRIPTION" => "N",
+                "SET_META_KEYWORDS" => "N",
+                "SET_STATUS_404" => "N",
+                "SET_TITLE" => "N",
+                "SHOW_404" => "N",
+                "SLIDER_PROPERTY" => "",
+                "SORT_BY1" => "ACTIVE_FROM",
+                "SORT_BY2" => "SORT",
+                "SORT_ORDER1" => "DESC",
+                "SORT_ORDER2" => "ASC",
+                "STRICT_SECTION_CHECK" => "N",
+                "TEMPLATE_THEME" => "",
+                "USE_RATING" => "N",
+                "USE_SHARE" => "N",
+                "COMPONENT_TEMPLATE" => "bootstrap_v4",
+                "DISPLAY_TOP_PAGER" => "N",
+                "DISPLAY_BOTTOM_PAGER" => "N"
+            ),
+            false
+        );?>
 
-        </div>
     </div>
 
     <div class="main-text">

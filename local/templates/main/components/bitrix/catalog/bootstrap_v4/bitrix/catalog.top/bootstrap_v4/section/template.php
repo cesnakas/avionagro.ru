@@ -97,6 +97,65 @@ $obName = 'ob'.preg_replace('/[^a-zA-Z0-9_]/', 'x', $this->GetEditAreaId($this->
 $containerName = 'catalog-top-container';
 ?>
 
+<!-- // -->
+<?/*
+<div class="catalog-content" data-entity="<?=$containerName?>">
+    <?
+    if (!empty($arResult['ITEMS']) && !empty($arResult['ITEM_ROWS'])) {
+    $areaIds = array();
+    foreach ($arResult['ITEMS'] as $item)
+    {
+        $uniqueId = $item['ID'].'_'.md5($this->randString().$component->getAction());
+        $areaIds[$item['ID']] = $this->GetEditAreaId($uniqueId);
+        $this->AddEditAction($uniqueId, $item['EDIT_LINK'], $elementEdit);
+        $this->AddDeleteAction($uniqueId, $item['DELETE_LINK'], $elementDelete, $elementDeleteParams);
+    }
+    ?>
+
+        <?/*
+        $APPLICATION->IncludeComponent(
+            'bitrix:catalog.item',
+            'bootstrap_v4',
+            array(
+                'RESULT' => array(
+                    'ITEM' => $item,
+                    'AREA_ID' => $areaIds[$item['ID']],
+                    'TYPE' => $rowData['TYPE'],
+                    'BIG_LABEL' => 'N',
+                    'BIG_DISCOUNT_PERCENT' => 'N',
+                    'BIG_BUTTONS' => 'N',
+                    'SCALABLE' => 'N'
+                ),
+                'PARAMS' => $generalParams
+                    + array('SKU_PROPS' => $arResult['SKU_PROPS'][$item['IBLOCK_ID']])
+            ),
+            $component,
+            array('HIDE_ICONS' => 'Y')
+        );
+        */?>
+
+    <?/*
+    }
+    else
+    {
+        // load css for bigData/deferred load
+        $APPLICATION->IncludeComponent(
+            'bitrix:catalog.item',
+            'bootstrap_v4',
+            array(),
+            $component,
+            array('HIDE_ICONS' => 'Y')
+        );
+    }
+
+    $signer = new \Bitrix\Main\Security\Sign\Signer;
+    $signedTemplate = $signer->sign($templateName, 'catalog.top');
+    $signedParams = $signer->sign(base64_encode(serialize($arResult['ORIGINAL_PARAMETERS'])), 'catalog.top');
+    ?>
+</div>
+*/?>
+<!-- // -->
+
 <div class="catalog-top bx-<?=$arParams['TEMPLATE_THEME']?>" data-entity="<?=$containerName?>">
 	<?
 	if (!empty($arResult['ITEMS']) && !empty($arResult['ITEM_ROWS']))
@@ -590,6 +649,7 @@ $containerName = 'catalog-top-container';
 	$signedParams = $signer->sign(base64_encode(serialize($arResult['ORIGINAL_PARAMETERS'])), 'catalog.top');
 	?>
 </div>
+
 <script>
 	BX.message({
 		RELATIVE_QUANTITY_MANY: '<?=CUtil::JSEscape($arParams['MESS_RELATIVE_QUANTITY_MANY'])?>',

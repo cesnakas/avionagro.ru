@@ -36,7 +36,7 @@ $APPLICATION->SetTitle("Корзина");
                 "GIFTS_TEXT_LABEL_GIFT" => "Подарок",
                 "HIDE_COUPON" => "Y",
                 "LABEL_PROP" => array(),
-                "PATH_TO_ORDER" => "/personal/order/make/",
+                "PATH_TO_ORDER" => "/personal/order/",
                 "PRICE_DISPLAY_MODE" => "Y",
                 "PRICE_VAT_SHOW_VALUE" => "N",
                 "PRODUCT_BLOCKS_ORDER" => "props,sku,columns",

@@ -156,7 +156,8 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 
 ?>
 
-<div class="catalog-content__list<?/*=$themeClass*/?>"> <? // row wrapper ?>
+<div class="catalog-content__list">
+
 	<!--<div class="col">-->
 	<?
 	//region Pagination
@@ -683,7 +684,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 			?>
 			<div class="text-center mb-4" data-entity="lazy-<?=$containerName?>">
 				<button type="button"
-						class="btn btn-primary btn-md"
+						class="catalog-btn"
 						style="margin: 15px;"
 						data-use="show-more-<?=$navParams['NavNum']?>">
 							<?=$arParams['MESS_BTN_LAZY_LOAD']?>

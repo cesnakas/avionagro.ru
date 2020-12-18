@@ -32,16 +32,17 @@ else
 
 <div class="container">
 
-<div class="row mb-4 <?=$arParams["TEMPLATE_THEME"]?>">
-	<div class="<?=$contentBlockClass?>">
-
+    <div class="catalog">
 
 		<?
 		//region Filter
 		if ($isFilter): ?>
 			<div class="row">
 				<div class="col<?=(isset($arParams['FILTER_HIDE_ON_MOBILE']) && $arParams['FILTER_HIDE_ON_MOBILE'] === 'Y' ? ' d-none d-sm-block' : '')?>">
-					<? $APPLICATION->IncludeComponent("bitrix:catalog.smart.filter", "bootstrap_v4", array(
+					<?$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.smart.filter",
+                        "bootstrap_v4",
+                        array(
 							"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 							"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 							"SECTION_ID" => $arCurSection['ID'],
@@ -67,14 +68,14 @@ else
 						),
 						$component,
 						array('HIDE_ICONS' => 'Y')
-					);
-					?>
+					);?>
 				</div>
 			</div>
 		<? endif
 		//endregion
 		?>
 
+        <?/*
 		<div class="row">
 			<div class="col">
 				<?
@@ -196,9 +197,12 @@ else
 				?>
 			</div>
 		</div>
+        */?>
 
+        <?/*
 		<div class="row">
 			<div class="col">
+        */?>
 				<?
 				$sectionListParams = array(
 					"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
@@ -235,7 +239,10 @@ else
 
 				if ($arParams["USE_COMPARE"] === "Y")
 				{
-					$APPLICATION->IncludeComponent("bitrix:catalog.compare.list", "", array(
+					$APPLICATION->IncludeComponent(
+                        "bitrix:catalog.compare.list",
+                        "",
+                        array(
 							"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 							"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 							"NAME" => $arParams["COMPARE_NAME"],
@@ -251,7 +258,10 @@ else
 					);
 				}
 
-				$intSectionID = $APPLICATION->IncludeComponent("bitrix:catalog.section", "bootstrap_v4", array(
+				$intSectionID = $APPLICATION->IncludeComponent(
+                    "bitrix:catalog.section",
+                    "bootstrap_v4",
+                    array(
 						"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 						"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 						"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],
@@ -377,8 +387,10 @@ else
 					$component
 				);
 				?>
+        <?/*
 			</div>
 		</div>
+        */?>
 
 		<? $GLOBALS['CATALOG_CURRENT_SECTION_ID'] = $intSectionID;
 
@@ -512,7 +524,6 @@ else
 		}
 		unset($basketAction);
 		?>
-	</div>
 
 	<? if ($isSidebar): ?>
 		<div class="col-md-3 col-sm-4<?=($isSidebarLeft ? " order-2 order-sm-1" : " order-2")?>">
@@ -529,6 +540,7 @@ else
 			?>
 		</div>
 	<? endif ?>
-</div>
+
+    </div>
 
 </div>

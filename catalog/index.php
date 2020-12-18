@@ -27,43 +27,6 @@ $APPLICATION->SetTitle("Каталог");
         </div>
     </div>
 
-    <!--<div class="container-banner">
-        <div class="banner-ad">
-            <div class="swiper-container slider-banner-ad">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="<?/*=SITE_TEMPLATE_PATH;*/?>/img/banner/banner1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="<?/*=SITE_TEMPLATE_PATH;*/?>/img/banner/banner1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="<?/*=SITE_TEMPLATE_PATH;*/?>/img/banner/banner1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="<?/*=SITE_TEMPLATE_PATH;*/?>/img/banner/banner1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">
-                            <img src="<?/*=SITE_TEMPLATE_PATH;*/?>/img/banner/banner1.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-pagination banner-pagination"></div>
-                <div class="swiper-button-prev banner-button-prev"></div>
-                <div class="swiper-button-next banner-button-next"></div>
-            </div>
-        </div>
-    </div>-->
-
     <?$APPLICATION->IncludeComponent(
         "bitrix:catalog",
         "bootstrap_v4",
@@ -161,7 +124,7 @@ $APPLICATION->SetTitle("Каталог");
             "LIST_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
             "LIST_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false}]",
             "LIST_PROPERTY_CODE_MOBILE" => array(),
-            "LIST_SHOW_SLIDER" => "Y",
+            "LIST_SHOW_SLIDER" => "N",
             "LIST_SLIDER_INTERVAL" => "3000",
             "LIST_SLIDER_PROGRESS" => "N",
             "LOAD_ON_SCROLL" => "Y",
@@ -240,7 +203,7 @@ $APPLICATION->SetTitle("Каталог");
             "TOP_LINE_ELEMENT_COUNT" => "3",
             "TOP_PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons",
             "TOP_PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false},{'VARIANT':'3','BIG_DATA':false}]",
-            "TOP_SHOW_SLIDER" => "Y",
+            "TOP_SHOW_SLIDER" => "N",
             "TOP_SLIDER_INTERVAL" => "3000",
             "TOP_SLIDER_PROGRESS" => "N",
             "TOP_VIEW_MODE" => "SECTION",
@@ -266,7 +229,7 @@ $APPLICATION->SetTitle("Каталог");
         )
     );?>
 
-    <div class="container">
+    <!--<div class="container">-->
 
         <?$APPLICATION->IncludeComponent(
             "bitrix:news.list",
@@ -332,7 +295,7 @@ $APPLICATION->SetTitle("Каталог");
             )
         );?>
 
-    </div>
+    <!--</div>-->
 
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");

@@ -200,7 +200,7 @@ if (!empty($arResult['RAW_ITEMS']) && !empty($arResult['ITEM_ROWS']))
 	});
 </script>
 
-<?
+<?/*
 if (count($arResult['ITEMS']) > 1) :
 	$jsParams = array(
 		'cont' => $obName,
@@ -227,4 +227,4 @@ if ($arParams['SHOW_PAGINATION'] === 'Y') {
 	<script type="text/javascript">
 		var ob<?=$obName?> = new JCCatalogTopSliderList(<?=CUtil::PhpToJSObject($jsParams, false, true)?>);
 	</script>
-<? endif; ?>
+<? endif; */?>

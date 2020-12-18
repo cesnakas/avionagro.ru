@@ -17,6 +17,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 
 
 <div class="container">
+<div class="news">
 
     <div class="news__title">
         <span class="news__title_name">Новости</span>
@@ -339,4 +340,5 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
         <?endforeach;?>
     </div>
 
+</div>
 </div>

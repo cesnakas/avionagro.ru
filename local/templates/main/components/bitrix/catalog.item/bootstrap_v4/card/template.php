@@ -50,6 +50,7 @@ use \Bitrix\Main\Localization\Loc;
             id="<?=$itemIds['PICT']?>"
             src="<?=$item['PREVIEW_PICTURE']['SRC']?>"
             loading="lazy"
+            height="150px"
             alt="<?=$imgTitle?>"
             style="<?=($showSlider ? 'display: none;' : '-webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center')?>"
         />

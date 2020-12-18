@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/images/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/banner/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/component_epilog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/images/no_photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/images/no_prop_value.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/lang/en/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/lang/en/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/lang/ru/.parameters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/lang/ru/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/result_modifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/section/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/section/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/section/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/section/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/section/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/images/arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/script.map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/script.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/template_dev.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.top/bootstrap_v4/slider/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +74,7 @@
       <workItem from="1608136538460" duration="1994000" />
       <workItem from="1608139073992" duration="34000" />
       <workItem from="1608182934249" duration="17432000" />
-      <workItem from="1608301177748" duration="3710000" />
+      <workItem from="1608301177748" duration="8277000" />
     </task>
     <servers />
   </component>

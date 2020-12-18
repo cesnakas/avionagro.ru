@@ -1,0 +1,4 @@
+body .page .card-product__about_text {
+    height: 80px;
+    overflow: hidden;
+}

@@ -102,7 +102,7 @@ if (isset($arResult['ITEM']))
 	$itemHasDetailUrl = isset($item['DETAIL_PAGE_URL']) && $item['DETAIL_PAGE_URL'] != '';
 	?>
 
-	<div class="__product-item-container<?=(isset($arResult['SCALABLE']) && $arResult['SCALABLE'] === 'Y' ? ' product-item-scalable-card' : '')?>"
+	<div class="catalog-content__item<?/*=(isset($arResult['SCALABLE']) && $arResult['SCALABLE'] === 'Y' ? ' product-item-scalable-card' : '')*/?>"
 		id="<?=$areaId?>" data-entity="item">
 		<?
 		$documentRoot = Main\Application::getDocumentRoot();

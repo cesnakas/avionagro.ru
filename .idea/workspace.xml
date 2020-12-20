@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template__me.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/card/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/component_epilog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/lang/en/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/lang/ru/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/line/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/script.map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/script.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/black/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/black/colors.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/blue/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/blue/colors.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/green/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/green/colors.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/red/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/red/colors.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/wood/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/wood/colors.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/yellow/colors.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.section/bootstrap_v4/bitrix/catalog.item/bootstrap_v4/themes/yellow/colors.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_vertical.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/section_vertical.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +98,7 @@
       <workItem from="1608182934249" duration="17432000" />
       <workItem from="1608301177748" duration="16022000" />
       <workItem from="1608380114444" duration="236000" />
-      <workItem from="1608387747415" duration="16669000" />
+      <workItem from="1608387747415" duration="25010000" />
     </task>
     <servers />
   </component>

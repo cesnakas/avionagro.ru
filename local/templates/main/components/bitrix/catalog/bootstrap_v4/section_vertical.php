@@ -35,7 +35,10 @@ if ($isSidebar) {
         if ($isFilter): ?>
             <div class="bx-sidebar-block">
                 <?
-                $APPLICATION->IncludeComponent("bitrix:catalog.smart.filter", "bootstrap_v4", array(
+                $APPLICATION->IncludeComponent(
+                    "bitrix:catalog.smart.filter",
+                    "bootstrap_v4",
+                    array(
                         "IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
                         "IBLOCK_ID" => $arParams["IBLOCK_ID"],
                         "SECTION_ID" => $arCurSection['ID'],
@@ -131,7 +134,8 @@ if ($isSidebar) {
 						CBitrixComponent::includeComponentClass('bitrix:sale.products.gift.section');
 						$APPLICATION->IncludeComponent(
 							'bitrix:sale.products.gift.section',
-							'bootstrap_v4', array(
+							'bootstrap_v4',
+                            array(
 								'IBLOCK_TYPE' => $arParams['IBLOCK_TYPE'],
 								'IBLOCK_ID' => $arParams['IBLOCK_ID'],
 
@@ -254,7 +258,8 @@ if ($isSidebar) {
 		{
 			$APPLICATION->IncludeComponent(
 			 	"bitrix:catalog.compare.list",
-				"bootstrap_v4", array(
+				"bootstrap_v4",
+                array(
 					"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 					"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 					"NAME" => $arParams["COMPARE_NAME"],
@@ -273,7 +278,8 @@ if ($isSidebar) {
 
 	 	 $intSectionID = $APPLICATION->IncludeComponent(
 					"bitrix:catalog.section",
-					"bootstrap_v4", array(
+					"bootstrap_v4",
+                    array(
 						"IBLOCK_TYPE" => $arParams["IBLOCK_TYPE"],
 						"IBLOCK_ID" => $arParams["IBLOCK_ID"],
 						"ELEMENT_SORT_FIELD" => $arParams["ELEMENT_SORT_FIELD"],

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template_dev.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/example.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template__.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template_dev.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,9 @@
       <workItem from="1608136538460" duration="1994000" />
       <workItem from="1608139073992" duration="34000" />
       <workItem from="1608182934249" duration="17432000" />
-      <workItem from="1608301177748" duration="15966000" />
+      <workItem from="1608301177748" duration="16022000" />
+      <workItem from="1608380114444" duration="236000" />
+      <workItem from="1608387747415" duration="2462000" />
     </task>
     <servers />
   </component>

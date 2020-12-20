@@ -25,9 +25,10 @@ use \Bitrix\Main\Localization\Loc;
 
 <div class="product-item">
     <? if ($itemHasDetailUrl): ?>
-    <a class="product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>" data-entity="image-wrapper">
-    <? else: ?>
-    <span class="product-item-image-wrapper" data-entity="image-wrapper">
+    <a class="product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>"
+       data-entity="image-wrapper">
+        <? else: ?>
+        <span class="product-item-image-wrapper" data-entity="image-wrapper">
 	<? endif; ?>
 		<span class="product-item-image-slider-slide-container slide" id="<?=$itemIds['PICT_SLIDER']?>"
 			<?=($showSlider ? '' : 'style="display: none;"')?>

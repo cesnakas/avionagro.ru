@@ -26,16 +26,31 @@ use \Bitrix\Main\Localization\Loc;
 <div class="card-product">
 
     <div class="card-product__stock" style="z-index: 20">
-        <div class="card-product__stock_number active">-25%</div>
+
+        <? if ($arParams['SHOW_DISCOUNT_PERCENT'] === 'Y') { ?>
+        <div
+            class="card-product__stock_number active <?=$discountPositionClass?>"
+            id="<?=$itemIds['DSC_PERC']?>"
+            <?=($price['PERCENT'] > 0 ? '' : 'style="display: none;"')?>
+        >
+            <span><?=-$price['PERCENT']?>%</span>
+
+        </div>
+        <? } ?>
+        <!--<div class="card-product__stock_number active">-25%</div>-->
+
+
         <div class="card-product__stock_text active">Акция</div>
+
     </div>
 
 	<? if ($itemHasDetailUrl): ?>
-	<a class="card-product__box product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>" data-entity="image-wrapper">
+	<a class="card-product__box" href="<?=$item['DETAIL_PAGE_URL']?>" <?/*title="<?=$imgTitle?>"*/?> data-entity="image-wrapper">
     <? else: ?>
-    <span class="product-item-image-wrapper" data-entity="image-wrapper">
+    <span class="card-product__box" data-entity="image-wrapper">
 	<? endif; ?>
 
+        <?/*
 		<span class="product-item-image-slider-slide-container slide" id="<?=$itemIds['PICT_SLIDER']?>" <?=($showSlider ? '' : 'style="display: none;"')?> data-slider-interval="<?=$arParams['SLIDER_INTERVAL']?>" data-slider-wrap="true">
         <? if ($showSlider) : ?>
             <? foreach ($morePhoto as $key => $photo) : ?>
@@ -43,12 +58,13 @@ use \Bitrix\Main\Localization\Loc;
             <? endforeach; ?>
         <? endif; ?>
 		</span>
+        */?>
 
 		<img
             class="product-item-image-original"
             id="<?=$itemIds['PICT']?>"
             src="<?=$item['PREVIEW_PICTURE']['SRC']?>"
-            loading="lazy"
+            <?/*loading="lazy"*/?>
             height="150px"
             alt="<?=$imgTitle?>"
             style="-webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center"
@@ -65,67 +81,55 @@ use \Bitrix\Main\Localization\Loc;
         />
         <? endif; */?>
 
-		<?
-		if ($arParams['SHOW_DISCOUNT_PERCENT'] === 'Y')
-		{
-			?>
-			<div class="product-item-label-ring <?=$discountPositionClass?>" id="<?=$itemIds['DSC_PERC']?>"
-				<?=($price['PERCENT'] > 0 ? '' : 'style="display: none;"')?>>
-				<span><?=-$price['PERCENT']?>%</span>
-			</div>
-			<?
-		}
+		<?/* if ($arParams['SHOW_DISCOUNT_PERCENT'] === 'Y') { ?>
+        <div
+            class="product-item-label-ring <?=$discountPositionClass?>"
+            id="<?=$itemIds['DSC_PERC']?>"
+            <?=($price['PERCENT'] > 0 ? '' : 'style="display: none;"')?>
+        >
+            <span><?=-$price['PERCENT']?>%</span>
+        </div>
+        <? } */?>
 
-		if ($item['LABEL'])
-		{
-			?>
-			<div class="product-item-label-text <?=$labelPositionClass?>" id="<?=$itemIds['STICKER_ID']?>">
-				<?
-				if (!empty($item['LABEL_ARRAY_VALUE']))
-				{
-					foreach ($item['LABEL_ARRAY_VALUE'] as $code => $value)
-					{
-						?>
-						<div<?=(!isset($item['LABEL_PROP_MOBILE'][$code]) ? ' class="d-none d-sm-block"' : '')?>>
-							<span title="<?=$value?>"><?=$value?></span>
-						</div>
-						<?
-					}
-				}
-				?>
-			</div>
-			<?
-		}
-		?>
-		<span class="product-item-image-slider-control-container" id="<?=$itemIds['PICT_SLIDER']?>_indicator"
-			<?=($showSlider ? '' : 'style="display: none;"')?>>
-			<?
-			if ($showSlider)
-			{
-				foreach ($morePhoto as $key => $photo)
-				{
-					?>
-					<span class="product-item-image-slider-control<?=($key == 0 ? ' active' : '')?>" data-go-to="<?=$key?>"></span>
-					<?
-				}
-			}
-			?>
+		<? if ($item['LABEL']) { ?>
+        <div class="product-item-label-text <?=$labelPositionClass?>" id="<?=$itemIds['STICKER_ID']?>">
+            <?
+            if (!empty($item['LABEL_ARRAY_VALUE']))
+            {
+                foreach ($item['LABEL_ARRAY_VALUE'] as $code => $value)
+                {
+                    ?>
+                    <div<?=(!isset($item['LABEL_PROP_MOBILE'][$code]) ? ' class="d-none d-sm-block"' : '')?>>
+                        <span title="<?=$value?>"><?=$value?></span>
+                    </div>
+                    <?
+                }
+            }
+            ?>
+        </div>
+        <? } ?>
+
+        <?/*
+		<span class="product-item-image-slider-control-container" id="<?=$itemIds['PICT_SLIDER']?>_indicator"<?=($showSlider ? '' : 'style="display: none;"')?>>
+        <? if ($showSlider) { ?>
+            <? foreach ($morePhoto as $key => $photo) { ?>
+            <span class="product-item-image-slider-control<?=($key == 0 ? ' active' : '')?>" data-go-to="<?=$key?>"></span>
+            <? } ?>
+        <? } ?>
 		</span>
-		<?
-		if ($arParams['SLIDER_PROGRESS'] === 'Y')
-		{
-			?>
-			<span class="product-item-image-slider-progress-bar-container">
-				<span class="product-item-image-slider-progress-bar" id="<?=$itemIds['PICT_SLIDER']?>_progress_bar" style="width: 0;"></span>
-			</span>
-			<?
-		}
-		?>
-			<? if ($itemHasDetailUrl): ?>
+        */?>
+
+		<? if ($arParams['SLIDER_PROGRESS'] === 'Y') { ?>
+        <span class="product-item-image-slider-progress-bar-container">
+            <span class="product-item-image-slider-progress-bar" id="<?=$itemIds['PICT_SLIDER']?>_progress_bar" style="width: 0;"></span>
+        </span>
+        <? } ?>
+
+    <? if ($itemHasDetailUrl): ?>
 	</a>
-<? else: ?>
+    <? else: ?>
 	</span>
-<? endif; ?>
+    <? endif; ?>
 
     <div class="card-product__content">
         <div class="card-product__about">

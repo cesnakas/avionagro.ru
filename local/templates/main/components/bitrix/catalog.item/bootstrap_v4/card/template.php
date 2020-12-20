@@ -580,12 +580,13 @@ use \Bitrix\Main\Localization\Loc;
 
     </div>
 
-    <div data-entity="buttons-block">
+    <div class="product-item-info-container product-item-hidden" data-entity="buttons-block">
     <? if (!$haveOffers) : ?>
 
         <? if ($actualItem['CAN_BUY']) { ?>
-        <div id="<?=$itemIds['BASKET_ACTIONS']?>">
-            <button type="button" class="basket_btn" id="<?=$itemIds['BUY_LINK']?>" href="<?=$arResult['ITEM']['ADD_URL']?>" rel="nofollow">
+        <div class="product-item-button-container" id="<?=$itemIds['BASKET_ACTIONS']?>">
+            <button class="basket_btn btn btn-primary <?=$buttonSizeClass?>" id="<?=$itemIds['BUY_LINK']?>"
+                    href="javascript:void(0)" rel="nofollow">
                 <div class="basket_content-out">
                     <div class="basket_icon">
                         <svg width="20" height="20" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -602,7 +603,7 @@ use \Bitrix\Main\Localization\Loc;
                 </div>
             </button>
         </div>
-        <? } /* else { ?>
+        <? } else { ?>
 
         <div id="<?=$itemIds['NOT_AVAILABLE_MESS']?>" style="text-align: center">
             <span class="price__now"><?=$arParams['MESS_NOT_AVAILABLE']?></span>
@@ -668,7 +669,7 @@ use \Bitrix\Main\Localization\Loc;
         </button>
     </div>
 
-        <? } */?>
+        <? } ?>
     <? endif; ?>
     </div>
 

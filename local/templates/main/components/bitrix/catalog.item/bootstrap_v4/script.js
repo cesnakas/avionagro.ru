@@ -8,8 +8,8 @@
 	{
 		BasketButton.superclass.constructor.apply(this, arguments);
 		this.buttonNode = BX.create('button', {
-			// props: {className: 'btn btn-primary btn-buy btn-sm', id: this.id},
-			props: {className: 'basket_btn', id: this.id},
+			props: {className: 'btn btn-primary btn-buy btn-sm', id: this.id},
+			// props: {className: 'basket_btn', id: this.id},
 			style: typeof params.style === 'object' ? params.style : {},
 			text: params.text,
 			events: this.contextEvents

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template__bx.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/card/template__me.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog.item/bootstrap_v4/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +74,7 @@
       <workItem from="1608182934249" duration="17432000" />
       <workItem from="1608301177748" duration="16022000" />
       <workItem from="1608380114444" duration="236000" />
-      <workItem from="1608387747415" duration="28480000" />
+      <workItem from="1608387747415" duration="30385000" />
     </task>
     <servers />
   </component>

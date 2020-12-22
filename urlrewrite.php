@@ -1,6 +1,6 @@
 <?php
 $arUrlRewrite=array (
-  4 => 
+  0 => 
   array (
     'CONDITION' => '#^/politika-konfidencialnosti/.*#',
     'RULE' => '/politika-konfidencialnosti/',
@@ -8,7 +8,7 @@ $arUrlRewrite=array (
     'PATH' => '/politika-konfidencialnosti.php',
     'SORT' => 100,
   ),
-  0 => 
+  2 => 
   array (
     'CONDITION' => '#^\\/?\\/mobileapp/jn\\/(.*)\\/.*#',
     'RULE' => 'componentName=$1',
@@ -16,7 +16,7 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/mobileapp/jn.php',
     'SORT' => 100,
   ),
-  2 => 
+  3 => 
   array (
     'CONDITION' => '#^/bitrix/services/ymarket/#',
     'RULE' => '',
@@ -24,7 +24,7 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/ymarket/index.php',
     'SORT' => 100,
   ),
-  3 => 
+  4 => 
   array (
     'CONDITION' => '#^/catalog/#',
     'RULE' => '',
@@ -32,7 +32,7 @@ $arUrlRewrite=array (
     'PATH' => '/catalog/index.php',
     'SORT' => 100,
   ),
-  1 => 
+  5 => 
   array (
     'CONDITION' => '#^/rest/#',
     'RULE' => '',

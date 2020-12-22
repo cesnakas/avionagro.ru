@@ -623,7 +623,21 @@ $APPLICATION->SetTitle("AVION");
 
     <div class="main-text">
         <div class="container">
-            <div class="main-text__content">Текст для SEO. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div class="main-text__content">
+			<?$APPLICATION->IncludeComponent(
+                            "bitrix:main.include", 
+                            ".default", 
+                            array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "inc",
+                                "AREA_FILE_RECURSIVE" => "Y",
+                                "EDIT_TEMPLATE" => "",
+                                "COMPONENT_TEMPLATE" => ".default",
+                                "PATH" => SITE_TEMPLATE_PATH."/includes/inc_seo-index.php"
+                            ),
+                            false
+                        );?>
+	    </div>
         </div>
     </div>
 

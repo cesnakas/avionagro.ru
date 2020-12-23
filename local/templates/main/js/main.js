@@ -20,17 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	document.querySelectorAll('.button-callback').forEach((elem) => {
-		elem.addEventListener('click', () => {
-			const feedBack = document.querySelector('.callback-form');
-			feedBack.classList.add('active')
-		})
+		elem.addEventListener('click', () => document.querySelector('#callback-form').classList.add('active'))
 	})
 
 	document.querySelectorAll('.callback-form__close').forEach((elem) => {
-		elem.addEventListener('click', () => {
-			const feedBack = document.querySelector('.callback-form');
-			feedBack.classList.remove('active')
-		})
+		elem.addEventListener('click', event => event.currentTarget.parentElement.parentElement.classList.remove('active'))
 	})
 
 	document.querySelectorAll('.basket_btn').forEach((elem) => {

@@ -8,6 +8,8 @@ if ($USER->IsAuthorized()) {
 }
 ?>
 
+<div class="container">
+
     <?$logout = $APPLICATION->GetCurPageParam(
         'logout=yes',
         [
@@ -18,6 +20,9 @@ if ($USER->IsAuthorized()) {
             'change_password'
         ]
     );?>
+
+</div>
+
 
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");

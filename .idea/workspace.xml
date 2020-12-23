@@ -2,13 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.element/bootstrap_v4/template_dev.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/catalog/bootstrap_v4/bitrix/catalog.element/bootstrap_v4/template_old.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local/templates/main/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/ajax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/component.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/images/feedback.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/lang/en/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/lang/en/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/lang/en/component.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/lang/ru/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/lang/ru/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/lang/ru/component.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/.default/lang/en/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/.default/lang/ru/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/.default/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/.default/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/.default/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/.default/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/popup/lang/en/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/popup/lang/ru/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/popup/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/popup/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/popup/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/components/avion/main.feedback/templates/popup/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/breadcrumb/.default/images/breadcrumbs_arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/footer/lang/ru/.description.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/menu/footer/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/confirm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/empty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/images/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/images/delivery_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/lang/en/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/lang/en/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/lang/ru/.parameters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/lang/ru/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/order_ajax.map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/result_modifier.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/scripts/google_maps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/scripts/google_maps.map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/scripts/google_maps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/scripts/yandex_maps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/sale.order.ajax/.default/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/includes/inc_phone-footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/includes/inc_phone-header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/local/templates/main/includes/inc_seo-index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/personal/order/payment/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/personal/order/payment/result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/components/bitrix/breadcrumb/.default/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/components/bitrix/breadcrumb/.default/template.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local/templates/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urlrewrite.php" beforeDir="false" afterPath="$PROJECT_DIR$/urlrewrite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local/templates/main/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/local/templates/main/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/personal/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personal/order/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/personal/order/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +127,7 @@
       <workItem from="1608380114444" duration="236000" />
       <workItem from="1608387747415" duration="30385000" />
       <workItem from="1608622000864" duration="2681000" />
+      <workItem from="1608723148104" duration="614000" />
     </task>
     <servers />
   </component>

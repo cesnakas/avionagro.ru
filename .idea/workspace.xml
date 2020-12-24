@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4c522b-a34d-4d70-b3a2-dcc6d6bfe6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/novelty/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/novelty/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/novelty/detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/urlrewrite.php" beforeDir="false" afterPath="$PROJECT_DIR$/urlrewrite.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +79,7 @@
       <workItem from="1608387747415" duration="30385000" />
       <workItem from="1608622000864" duration="2681000" />
       <workItem from="1608723148104" duration="2854000" />
-      <workItem from="1608828769371" duration="3786000" />
+      <workItem from="1608828769371" duration="5460000" />
     </task>
     <servers />
   </component>

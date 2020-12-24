@@ -40,4 +40,10 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/rest/index.php',
     'SORT' => 100,
   ),
+    6 => [
+        "CONDITION" => "#^/novelty/([a-zA-Z0-9-]+)/(\\?(.*))?#",
+        "RULE" => "ELEMENT_CODE=$1",
+        "ID" => "",
+        "PATH" => "/novelty/detail.php",
+    ]
 );

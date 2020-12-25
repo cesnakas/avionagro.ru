@@ -344,7 +344,7 @@ $APPLICATION->SetTitle("AVION");
                 "CACHE_TIME" => "3600",
                 "CACHE_TYPE" => "A",
                 "CHECK_DATES" => "Y",
-                "DETAIL_URL" => $_REQUEST["ELEMENT_CODE"], // "/news/#ELEMENT_CODE#/", // .$_REQUEST["ELEMENT_ID"],
+                "DETAIL_URL" => $_REQUEST["ELEMENT_CODE"],
                 "DISPLAY_DATE" => "Y",
                 "DISPLAY_NAME" => "Y",
                 "DISPLAY_PICTURE" => "Y",

@@ -8,6 +8,14 @@ $arUrlRewrite=array (
     'PATH' => '/novelty/detail.php',
     'SORT' => 100,
   ),
+  7 => 
+  array (
+    'CONDITION' => '#^/news/([a-zA-Z0-9-]+)/(\\?(.*))?#',
+    'RULE' => 'ELEMENT_CODE=$1',
+    'ID' => '',
+    'PATH' => '/news/index.php',
+    'SORT' => 100,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/politika-konfidencialnosti/.*#',
@@ -48,11 +56,12 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/rest/index.php',
     'SORT' => 100,
   ),
-    7 => [
-        'CONDITION' => '#^/news/([a-zA-Z0-9-]+)/(\\?(.*))?#',
-        'RULE' => 'ELEMENT_CODE=$1',
-        'ID' => '',
-        'PATH' => '/news/index.php',
-        'SORT' => 100,
-    ],
+  8 => 
+  array (
+    'CONDITION' => '#^/news/#',
+    'RULE' => '',
+    'ID' => 'bitrix:news',
+    'PATH' => '/news/index.php',
+    'SORT' => 100,
+  ),
 );

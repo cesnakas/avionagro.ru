@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Новости");
             Array(
                 "ADD_ELEMENT_CHAIN" => "N",
                 "ADD_SECTIONS_CHAIN" => "Y",
-                "AJAX_MODE" => "Y",
+                "AJAX_MODE" => "N",
                 "AJAX_OPTION_ADDITIONAL" => "",
                 "AJAX_OPTION_HISTORY" => "Y",
                 "AJAX_OPTION_JUMP" => "Y",
@@ -59,7 +59,13 @@ $APPLICATION->SetTitle("Новости");
                 "PAGER_TEMPLATE" => "bootstrap_v4",
                 "PAGER_TITLE" => "Новости",
                 "PREVIEW_TRUNCATE_LEN" => "",
-                "SEF_MODE" => "N",
+                "SEF_MODE" => "Y",
+                "SEF_FOLDER" => "/news/",
+                "SEF_URL_TEMPLATES" => Array(
+                    "detail" => "#ELEMENT_CODE#/",
+                    "news" => "",
+                    "section" => "#SECTION_CODE#/"
+                ),
                 "SET_LAST_MODIFIED" => "N",
                 "SET_STATUS_404" => "Y",
                 "SET_TITLE" => "Y",

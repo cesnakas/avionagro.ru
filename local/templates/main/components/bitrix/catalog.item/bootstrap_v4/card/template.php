@@ -291,7 +291,7 @@ use \Bitrix\Main\Localization\Loc;
                             {
                                 ?>
                                 <div class="product-item-button-container" id="<?=$itemIds['BASKET_ACTIONS']?>">
-                                    <button class="btn btn-primary <?=$buttonSizeClass?>" id="<?=$itemIds['BUY_LINK']?>"
+                                    <button class="basket_btn btn btn-primary <?=$buttonSizeClass?>" id="<?=$itemIds['BUY_LINK']?>"
                                             href="javascript:void(0)" rel="nofollow">
                                         <?=($arParams['ADD_TO_BASKET_ACTION'] === 'BUY' ? $arParams['MESS_BTN_BUY'] : $arParams['MESS_BTN_ADD_TO_BASKET'])?>
                                     </button>
@@ -311,7 +311,7 @@ use \Bitrix\Main\Localization\Loc;
                                             array(
                                                 'PRODUCT_ID' => $actualItem['ID'],
                                                 'BUTTON_ID' => $itemIds['SUBSCRIBE_LINK'],
-                                                'BUTTON_CLASS' => 'btn btn-primary '.$buttonSizeClass,
+                                                'BUTTON_CLASS' => 'basket_btn btn btn-primary '.$buttonSizeClass,
                                                 'DEFAULT_DISPLAY' => true,
                                                 'MESS_BTN_SUBSCRIBE' => $arParams['~MESS_BTN_SUBSCRIBE'],
                                             ),
@@ -358,7 +358,7 @@ use \Bitrix\Main\Localization\Loc;
                                         <?=$arParams['MESS_NOT_AVAILABLE']?>
                                     </button>
                                     <div id="<?=$itemIds['BASKET_ACTIONS']?>" <?=($actualItem['CAN_BUY'] ? '' : 'style="display: none;"')?>>
-                                        <button class="btn btn-primary <?=$buttonSizeClass?>" id="<?=$itemIds['BUY_LINK']?>"
+                                        <button class="basket_btn btn btn-primary <?=$buttonSizeClass?>" id="<?=$itemIds['BUY_LINK']?>"
                                                 href="javascript:void(0)" rel="nofollow">
                                             <?=($arParams['ADD_TO_BASKET_ACTION'] === 'BUY' ? $arParams['MESS_BTN_BUY'] : $arParams['MESS_BTN_ADD_TO_BASKET'])?>
                                         </button>
@@ -370,7 +370,7 @@ use \Bitrix\Main\Localization\Loc;
                             {
                                 ?>
                                 <div class="product-item-button-container">
-                                    <button class="btn btn-primary <?=$buttonSizeClass?>" href="<?=$item['DETAIL_PAGE_URL']?>">
+                                    <button class="basket_btn btn btn-primary <?=$buttonSizeClass?>" href="<?=$item['DETAIL_PAGE_URL']?>">
                                         <?=$arParams['MESS_BTN_DETAIL']?>
                                     </button>
                                 </div>

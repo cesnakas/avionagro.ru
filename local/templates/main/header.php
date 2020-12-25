@@ -9,14 +9,18 @@
     use Bitrix\Main\Page\Asset;
     // Meta
     Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1"/>');
+
+    /*
+    use Bitrix\Main\UI\Extension;
+    Extension::load('ui.bootstrap4');
+    */
+
     // CSS
+    Asset::getInstance()->addCss('/bitrix/css/main/font-awesome.min.css');
+    //$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/swiper-bundle.min.css');
     Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/css/style.css');
-    
-    
-    //$APPLICATION->SetAdditionalCSS("/bitrix/css/main/bootstrap.css");
-    Asset::getInstance()->addCss('/bitrix/css/main/font-awesome.min.css');
-    
+
     // JS
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/swiper-bundle.min.js');
     Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/js/main.js');

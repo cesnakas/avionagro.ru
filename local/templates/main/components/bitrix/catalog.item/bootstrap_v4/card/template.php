@@ -23,9 +23,10 @@ use \Bitrix\Main\Localization\Loc;
  */
 ?>
 
-<div class="product-item">
+<div class="card-product _product-item">
+
     <? if ($itemHasDetailUrl): ?>
-    <a class="product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>"
+    <a class="card-product__box _product-item-image-wrapper" href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$imgTitle?>"
        data-entity="image-wrapper">
         <? else: ?>
         <span class="product-item-image-wrapper" data-entity="image-wrapper">
@@ -45,7 +46,8 @@ use \Bitrix\Main\Localization\Loc;
             }
             ?>
 		</span>
-		<span class="product-item-image-original" id="<?=$itemIds['PICT']?>" style="background-image: url('<?=$item['PREVIEW_PICTURE']['SRC']?>'); <?=($showSlider ? 'display: none;' : '')?>"></span>
+		<img class="product-item-image-original" id="<?=$itemIds['PICT'];?>" src="<?=$item['PREVIEW_PICTURE']['SRC'];?>" height="150px" style="-webkit-object-fit: cover; object-fit: cover; -webkit-object-position: center; object-position: center" alt="<?=$imgTitle?>"
+
 		<?
         if ($item['SECOND_PICT'])
         {
@@ -115,7 +117,10 @@ use \Bitrix\Main\Localization\Loc;
 <? else: ?>
     </span>
 <? endif; ?>
-    <h3 class="product-item-title">
+
+<!--<div class="card-product__content">-->
+
+    <h3 class="card-product__about_name product-item-title">
         <? if ($itemHasDetailUrl): ?>
         <a href="<?=$item['DETAIL_PAGE_URL']?>" title="<?=$productTitle?>">
             <? endif; ?>
@@ -132,7 +137,7 @@ use \Bitrix\Main\Localization\Loc;
             switch ($blockName)
             {
                 case 'price': ?>
-                    <div class="product-item-info-container product-item-price-container" data-entity="price-block">
+                    <div class="card-product__about product-item-info-container product-item-price-container" data-entity="price-block">
                         <?
                         if ($arParams['SHOW_OLD_PRICE'] === 'Y')
                         {
@@ -178,7 +183,7 @@ use \Bitrix\Main\Localization\Loc;
                             if ($arParams['PRODUCT_DISPLAY_MODE'] === 'Y')
                             {
                                 ?>
-                                <div class="product-item-info-container product-item-hidden"
+                                <div class="card-product__about product-item-info-container product-item-hidden"
                                      id="<?=$itemIds['QUANTITY_LIMIT']?>"
                                      style="display: none;"
                                      data-entity="quantity-limit-block">
@@ -635,7 +640,9 @@ use \Bitrix\Main\Localization\Loc;
             }
         }
     }
-
+    ?>
+<!--</div>-->
+    <?
     if (
         $arParams['DISPLAY_COMPARE']
         && (!$haveOffers || $arParams['PRODUCT_DISPLAY_MODE'] === 'Y')
